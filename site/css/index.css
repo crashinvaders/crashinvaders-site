@@ -31,7 +31,7 @@ body {
 	height: 192px;
 	margin-bottom: 32px;
 }
-.thumb-icon {	
+.thumb-icon {   
 	position: absolute;
 	width: 100px;
 	height: 100px;
@@ -47,10 +47,10 @@ body {
 	margin: auto;
 	color: #666
 }
-.btn-app-link {	
+.btn-app-link { 
 	margin: 0 4px;
 	float: left;
-    background-size: 100% 100%;
+	background-size: 100% 100%;
 	width: 48px;
 	height: 48px;
 	display: inline;
@@ -82,9 +82,9 @@ body {
 	left: -2px;
 	top: 14px;
 }
-.btn-social-link {	
+.btn-social-link {  
 	margin: 0 4px;
-    background-size: 100% 100%;
+	background-size: 100% 100%;
 	width: 48px;
 	height: 48px;
 	float: left;
@@ -114,21 +114,23 @@ body {
 	background-image: url("../img/btn-social-mail-down.png");
 }
 .section-title-bg {
-	border-style: solid;
-	border-width: 8px 12px 20px;
-	-moz-border-image: url('../img/section-title.png') 8 12 20 stretch;
-	-webkit-border-image: url('../img/section-title.png') 8 12 20 stretch;
-	-o-border-image: url('../img/section-title.png') 8 12 20 stretch;
-	border-image: url('../img/section-title.png') 8 12 20 fill stretch;
+  margin: 0 -10px;
+  padding: 0;
+  margin-top: 64px;
+  border-style: solid;
+  border-width: 8px 12px 20px;
+  -moz-border-image: url('../img/section-title.png') 8 12 20 stretch;
+  -webkit-border-image: url('../img/section-title.png') 8 12 20 stretch;
+  -o-border-image: url('../img/section-title.png') 8 12 20 stretch;
+  border-image: url('../img/section-title.png') 8 12 20 fill stretch;
 }
-.section-title-text {
-	
+.section-title {
+  margin: -0px 0;
 }
 
 #header-frame {
 	height: 50px; 
 	background-color: #84dfe2;
-	/*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 }
 #header-shadow {
 	position: relative;
@@ -137,16 +139,18 @@ body {
 	height: 50px; 
 	margin-bottom: -50px;
 	z-index: 500;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
 }
 #img-logo {
-	height: 96px;
+	position: relative;
+	height: 128px;
 	margin-top: -46px;
-	z-index: 600;
+	z-index: 999;
 }
 #main-container {
-    /*height: 100%;*/
-	background: #eee
+	/*height: 100%;*/
+	padding: 0;
+	background: #eee;
 }
 #footer-frame {
 	/*position: absolute;
@@ -171,7 +175,7 @@ body {
 	-o-border-image: url('../img/paper-pane.png') 43 stretch;
 	border-image: url('../img/paper-pane.png') 43 fill stretch;
 }
-#test-div {
+#pinned-sign {
 	background-image: url('../img/pinned-sign.png');
 	position: absolute;
 	width: 36px;
