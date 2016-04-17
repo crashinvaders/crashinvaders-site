@@ -1,0 +1,181 @@
+@font-face { font-family: NokiaFC; src: url('../fonts/nokiafc22.ttf'); } 
+
+body {
+  font-family: NokiaFC;
+  font-size: 14px;
+  background-color: #847e87
+}
+
+.pixel-border {
+	border-style: solid;
+	border-width: 4px;
+	-moz-border-image: url('../img/thumb-bg.png') 4 stretch;
+	-webkit-border-image: url('../img/thumb-bg.png') 4 stretch;
+	-o-border-image: url('../img/thumb-bg.png') 4 stretch;
+	border-image: url('../img/thumb-bg.png') 4 stretch;
+}
+.pixel-border-light {
+	border-style: solid;
+	border-width: 4px;
+	-moz-border-image: url('../img/thumb-bg-light.png') 4 stretch;
+	-webkit-border-image: url('../img/thumb-bg-light.png') 4 stretch;
+	-o-border-image: url('../img/thumb-bg-light.png') 4 stretch;
+	border-image: url('../img/thumb-bg-light.png') 4 stretch;
+}
+.thumb-holder {
+	margin: auto;
+	padding: 24px 0px;
+}
+.thumb-image {
+	width: 256px;
+	height: 192px;
+	margin-bottom: 32px;
+}
+.thumb-icon {	
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	margin-left: -48px;
+	margin-top: 128px;
+	left: 50%;
+}
+.thumb-title {
+	color: #333;
+}
+.thumb-desc {
+	max-width: 300px;
+	margin: auto;
+	color: #666
+}
+.btn-app-link {	
+	margin: 0 4px;
+	float: left;
+    background-size: 100% 100%;
+	width: 48px;
+	height: 48px;
+	display: inline;
+}
+.btn-appstore {
+	background-image: url("../img/btn-thumb-ios-up.png");
+}
+.btn-appstore:active, .btn-appstore:hover {
+	background-image: url("../img/btn-thumb-ios-down.png");
+}
+.btn-android {
+	background-image: url("../img/btn-thumb-android-up.png");
+}
+.btn-android:active, .btn-android:hover {
+	background-image: url("../img/btn-thumb-android-down.png");
+}
+.btn-web {
+	background-image: url("../img/btn-thumb-web-up.png");
+}
+.btn-web:active, .btn-web:hover {
+	background-image: url("../img/btn-thumb-web-down.png");
+}
+.inactive-link {
+   pointer-events: none;
+   cursor: default;
+}
+.soon-badge {
+	position: relative;
+	left: -2px;
+	top: 14px;
+}
+.btn-social-link {	
+	margin: 0 4px;
+    background-size: 100% 100%;
+	width: 48px;
+	height: 48px;
+	float: left;
+}
+.btn-social-twit {
+	background-image: url("../img/btn-social-twit-up.png");
+}
+.btn-social-twit:active, .btn-social-twit:hover {
+	background-image: url("../img/btn-social-twit-down.png");
+}
+.btn-social-fb {
+	background-image: url("../img/btn-social-fb-up.png");
+}
+.btn-social-fb:active, .btn-social-fb:hover {
+	background-image: url("../img/btn-social-fb-down.png");
+}
+.btn-social-vk {
+	background-image: url("../img/btn-social-vk-up.png");
+}
+.btn-social-vk:active, .btn-social-vk:hover {
+	background-image: url("../img/btn-social-vk-down.png");
+}
+.btn-social-mail {
+	background-image: url("../img/btn-social-mail-up.png");
+}
+.btn-social-mail:active, .btn-social-mail:hover {
+	background-image: url("../img/btn-social-mail-down.png");
+}
+.section-title-bg {
+	border-style: solid;
+	border-width: 8px 12px 20px;
+	-moz-border-image: url('../img/section-title.png') 8 12 20 stretch;
+	-webkit-border-image: url('../img/section-title.png') 8 12 20 stretch;
+	-o-border-image: url('../img/section-title.png') 8 12 20 stretch;
+	border-image: url('../img/section-title.png') 8 12 20 fill stretch;
+}
+.section-title-text {
+	
+}
+
+#header-frame {
+	height: 50px; 
+	background-color: #84dfe2;
+	/*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+}
+#header-shadow {
+	position: relative;
+	left: 0;
+	top: -50px;
+	height: 50px; 
+	margin-bottom: -50px;
+	z-index: 500;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#img-logo {
+	height: 96px;
+	margin-top: -46px;
+	z-index: 600;
+}
+#main-container {
+    /*height: 100%;*/
+	background: #eee
+}
+#footer-frame {
+	/*position: absolute;
+	bottom: 0;
+	width: 100%;*/
+	background-color: #84dfe2;
+	padding: 16px 0;
+	/*height: 48px;*/
+}
+#credits-text {
+	color: #fff;
+}
+#about-pane {
+	margin: auto;
+	max-width: 600px;
+	margin-top: 48px;
+	position: relative;
+	border-style: solid;
+	border-width: 43px;
+	-moz-border-image: url('../img/paper-pane.png') 43 stretch;
+	-webkit-border-image: url('../img/paper-pane.png') 43 stretch;
+	-o-border-image: url('../img/paper-pane.png') 43 stretch;
+	border-image: url('../img/paper-pane.png') 43 fill stretch;
+}
+#test-div {
+	background-image: url('../img/pinned-sign.png');
+	position: absolute;
+	width: 36px;
+	height: 70px;
+	right: -5px;
+	z-index: 400;
+}
