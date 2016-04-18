@@ -20,13 +20,14 @@ body {
 	box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.2);
 }
 .thumb-cell {
-	margin-bottom: 24px;
+	margin-bottom: 48px;
 	z-index: 1
 }
 .thumb-holder {
 	display: inline-block;
 	position: relative;
-	width: 320px;
+	width: 320px;	
+  	text-shadow: 0 2px rgba(0,0,0,0.1);
 	
 	border-style: solid;
 	border-width: 4px 4px 6px;
@@ -107,7 +108,7 @@ body {
 	float: left;
 	background-size: 100% 100%;
 	width: 48px;
-	height: 48px;
+	height: 50px;
 	display: inline;
 }
 .btn-appstore {
@@ -170,7 +171,7 @@ body {
 }
 .section-title-bg {
 	position: relative;
-	margin: 0 -14px 24px -14px;
+	margin: 0 -14px 40px -14px;
 	padding: 8px 0;
 	height: 70px;
 	
@@ -183,8 +184,9 @@ body {
 }
 .section-title-text {
 	color: #826351;
-	margin: 6px 0 0 0;
+	margin: 4px 0 0 0;
 	text-shadow: 0 2px rgba(20%, 20%, 20%, 0.1);
+	font-size: 24px;
 }
 .section-badge {
 	position: absolute;
@@ -195,7 +197,7 @@ body {
 
 
 #main-container {
-	padding: 0;
+	padding: 64px 0 20px 0;
 	position: relative;
 	border-style: solid;
 	border-width: 0px 4px;
@@ -203,6 +205,13 @@ body {
 	-webkit-border-image: url('../img/general-pane-bg.png') 0 4 repeat;
 	-o-border-image: url('../img/general-pane-bg.png') 0 4 repeat;
 	border-image: url('../img/general-pane-bg.png') 0 4 fill repeat;
+}
+#main-container-background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin-top: -80px;
+	background-image: url(../img/content-background1.png);
 }
 #header-frame {
 	position: relative;
@@ -237,14 +246,13 @@ body {
 }
 #img-logo {
 	position: relative;
-	height: 128px;
 	margin-top: -46px;
+	width: 267px;
 	z-index: 999;
 }
 #about-pane {
 	margin: auto;
 	margin-bottom: 80px;
-	margin-top: 64px;
 	max-width: 600px;
 	position: relative;
 	
@@ -256,8 +264,9 @@ body {
 	border-image: url(../img/paper-pane.png) 60 fill stretch;
 }
 .about-text {
-	position: relative;
-	margin-left: -20px;
+	margin: -24px;
+	margin-bottom: -36px;
+  	text-shadow: 0 2px rgba(0,0,0,0.1);
 }
 .about-text p {
 	color: #755542;
@@ -269,7 +278,7 @@ body {
 	width: 232px;
 	height: 120px;
 	bottom: 0;
-	left: 0;
+	left: -2px;
 	z-index: 0;	
 }
 #grounding-right {
@@ -279,7 +288,7 @@ body {
 	width: 220px;
 	height: 122px;
 	bottom: 0;
-	right: 0;
+	right: -4px;
 	z-index: 0;
 }
 #face-miha {
@@ -320,3 +329,16 @@ body {
 #credits-text {
 	color: #fff;
 }
+
+/*
+@media screen and (max-width: 600px) {
+    .screen-big {
+        content: "small";
+    }
+}
+@media screen and (min-width: 600px) {
+    .screen-big {
+        content: "big";
+    }
+}
+*/
