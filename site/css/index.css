@@ -3,25 +3,11 @@
 body {
   font-family: NokiaFC;
   font-size: 14px;
-  background-color: #847e87
+/*  background-color: #847e87;*/
+  background-image: url(../img/background0.png);
 }
 
-.pixel-border {
-	border-style: solid;
-	border-width: 4px;
-	-moz-border-image: url('../img/thumb-bg.png') 4 stretch;
-	-webkit-border-image: url('../img/thumb-bg.png') 4 stretch;
-	-o-border-image: url('../img/thumb-bg.png') 4 stretch;
-	border-image: url('../img/thumb-bg.png') 4 stretch;
-}
-.pixel-border-light {
-	border-style: solid;
-	border-width: 2px;
-	-moz-border-image: url('../img/thumb-bg-light.png') 2 stretch;
-	-webkit-border-image: url('../img/thumb-bg-light.png') 2 stretch;
-	-o-border-image: url('../img/thumb-bg-light.png') 2 stretch;
-	border-image: url('../img/thumb-bg-light.png') 2 stretch;
-}
+
 .shadow-down-2px {
 	position: absolute;
 	left: 0;
@@ -184,41 +170,45 @@ body {
 }
 .section-title-bg {
 	position: relative;
-  margin: 0 -12px 24px -12px;
-  padding: 8px 0;
-  border-style: solid;
-  border-width: 8px 12px 20px;
-  -moz-border-image: url('../img/section-title.png') 8 12 20 stretch;
-  -webkit-border-image: url('../img/section-title.png') 8 12 20 stretch;
-  -o-border-image: url('../img/section-title.png') 8 12 20 stretch;
-  border-image: url('../img/section-title.png') 8 12 20 fill stretch;
+	margin: 0 -14px 24px -14px;
+	padding: 8px 0;
+	height: 70px;
+	
+	border-style: solid;
+	border-width: 3px 70px 51px 56px;
+	-moz-border-image: url(../img/section-title.png) 3 70 51 56 stretch;
+	-webkit-border-image: url(../img/section-title.png) 3 70 51 56 stretch;
+	-o-border-image: url(../img/section-title.png) 3 70 51 56 stretch;
+	border-image: url(../img/section-title.png) 3 70 51 56 fill stretch;
 }
 .section-title-text {
 	color: #826351;
-	margin: 4px 0 0 0;
+	margin: 6px 0 0 0;
 	text-shadow: 0 2px rgba(20%, 20%, 20%, 0.1);
 }
 .section-badge {
 	position: absolute;
 	top: 0;
+	margin-top: -9px;
+	margin-left: -300px;
 }
 
 
 #main-container {
 	padding: 0;
 	position: relative;
-/*	background: #eee;*/
 	border-style: solid;
-	border-width: 0px 2px;
-	-moz-border-image: url('../img/general-pane-bg.png') 0 2 repeat;
-	-webkit-border-image: url('../img/general-pane-bg.png') 0 2 repeat;
-	-o-border-image: url('../img/general-pane-bg.png') 0 2 repeat;
-	border-image: url('../img/general-pane-bg.png') 0 2 fill repeat;
+	border-width: 0px 4px;
+	-moz-border-image: url('../img/general-pane-bg.png') 0 4 repeat;
+	-webkit-border-image: url('../img/general-pane-bg.png') 0 4 repeat;
+	-o-border-image: url('../img/general-pane-bg.png') 0 4 repeat;
+	border-image: url('../img/general-pane-bg.png') 0 4 fill repeat;
 }
 #header-frame {
 	position: relative;
 	height: 50px; 
 	padding: 0;
+	z-index: 100;
 }
 #header-bg {
 	position: absolute;
@@ -254,23 +244,23 @@ body {
 #about-pane {
 	margin: auto;
 	margin-bottom: 80px;
+	margin-top: 64px;
 	max-width: 600px;
-	margin-top: 48px;
 	position: relative;
+	
 	border-style: solid;
-	border-width: 43px;
-	-moz-border-image: url('../img/paper-pane.png') 43 stretch;
-	-webkit-border-image: url('../img/paper-pane.png') 43 stretch;
-	-o-border-image: url('../img/paper-pane.png') 43 stretch;
-	border-image: url('../img/paper-pane.png') 43 fill stretch;
+	border-width: 60px;
+	-moz-border-image: url(../img/paper-pane.png) 60 stretch;
+	-webkit-border-image: url(../img/paper-pane.png) 60 stretch;
+	-o-border-image: url(../img/paper-pane.png) 60 stretch;
+	border-image: url(../img/paper-pane.png) 60 fill stretch;
 }
-#pinned-sign {
-	background-image: url('../img/pinned-sign.png');
-	position: absolute;
-	width: 36px;
-	height: 70px;
-	right: -5px;
-	z-index: 400;
+.about-text {
+	position: relative;
+	margin-left: -20px;
+}
+.about-text p {
+	color: #755542;
 }
 #grounding-left {
 	content: "";
@@ -304,7 +294,7 @@ body {
     transition: margin-bottom 0.25s;
 }
 #face-miha:hover {
-	margin-bottom: 28px;
+	margin-bottom: 24px;
 }
 #face-antoha {
 	content: url('../img/face-antoha.png');
@@ -318,7 +308,7 @@ body {
     transition: margin-bottom 0.25s;
 }
 #face-antoha:hover {
-	margin-bottom: 28px;
+	margin-bottom: 24px;
 }
 #footer-frame {
 	position: relative;
