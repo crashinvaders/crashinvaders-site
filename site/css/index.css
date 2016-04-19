@@ -319,13 +319,19 @@ body {
 	right: -4px;
 	z-index: 0;
 }
-#face-miha {
-	content: url('../img/face-miha.png');
+#face-holder {
+	display: inline-block;
 	position: absolute;
-	bottom: -44px;
-	left: -190px;
+	bottom: 0;
+	margin: auto;
 	z-index: 1;	
+}
+#face-miha {
+	position: absolute;
+	right: -1px;
    	cursor: default;
+	outline : none;
+	bottom: -40px;
 	
     -webkit-transition: margin-bottom 0.25s;
     transition: margin-bottom 0.25s;
@@ -334,12 +340,11 @@ body {
 	margin-bottom: 24px;
 }
 #face-antoha {
-	content: url('../img/face-antoha.png');
 	position: absolute;
+	left: -1px;
 	bottom: -40px;
-	left: -128px;
-	z-index: 1;
    	cursor: default;
+	outline : none;
 	
     -webkit-transition: margin-bottom 0.25s;
     transition: margin-bottom 0.25s;
