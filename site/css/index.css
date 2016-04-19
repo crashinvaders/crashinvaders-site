@@ -3,8 +3,8 @@
 body {
   font-family: NokiaFC;
   font-size: 14px;
-/*  background-color: #847e87;*/
   background-image: url(../img/background0.png);
+	overflow-x: hidden;
 	
   image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
   image-rendering: -moz-crisp-edges;          /* Firefox                        */
