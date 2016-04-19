@@ -12,9 +12,13 @@ body {
   image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
   image-rendering: pixelated; /* Chrome */
   image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
-  -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+  -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */	
 }
 
+.smooth-render {	
+  image-rendering: auto;
+  -ms-interpolation-mode: bicubic;
+}
 
 .shadow-down-2px {
 	position: absolute;
