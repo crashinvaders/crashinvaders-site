@@ -15,11 +15,13 @@
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
+    <link type="text/css" href="css/image-cycler.css" rel="stylesheet">
     <link type="text/css" href="css/index.css" rel="stylesheet">
 <!--    <link type="text/css" href="css/ui-lightness/jquery-ui-1.8.14.custom.css" rel="stylesheet" />-->
 
 <!--    <script type="text/javascript" src="js/jquery-ui-1.8.14.custom.min.js"></script>-->
     <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="js/image-cycler.js"></script>
     <script type="text/javascript" src="js/responsive-content.js"></script>
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
@@ -60,13 +62,28 @@
 		<div id="section-title-our-games" class="section-title-text"></div>
 	  	<img class="section-badge" src="img/section-badge-games.png"/>
       </div> 
+		
+<!--
+	<div id="cycler" style="overflow: hidden; width: 300px; height: 200px;">
+		<img class="active" src="img/thumb-getreact0.png" />
+		<img src="img/thumb-getreact1.png" />	
+	</div>
+-->
 
       <div class="row" style="display: inline-block">
 		  		  
         <div class="col-sm-12 col-md-6 thumb-cell">
-          <div class="thumb-holder shadow-down-2px">			  
-			<div class="thumb-image-container" style="margin-top: 0px">
-		      <img class="thumb-image" src="img/test-preview.png" alt="..."/>
+          <div class="thumb-holder">			  
+			<div class="thumb-image-container">
+				<div class="cycler" style="width: 100%; height: 100%; overflow: hidden;">
+					<img class="active thumb-image" src="img/thumb-getreact0.png" />
+					<img class="thumb-image" src="img/thumb-getreact1.png" />	
+					<img class="thumb-image" src="img/thumb-getreact2.png" />	
+					<img class="thumb-image" src="img/thumb-getreact3.png" />	
+					<img class="thumb-image" src="img/thumb-getreact4.png" />	
+					<img class="thumb-image" src="img/thumb-getreact5.png" />	
+				</div>
+<!--		      <img class="thumb-image" src="img/thumb-getreact0.png" alt="..."/>-->
               <img class="thumb-icon" src="img/icon-getreact.png"/>
 			</div>
             <p class="thumb-title">Get React</p>
@@ -86,9 +103,15 @@
         </div>
 		  
         <div class="col-sm-12 col-md-6 thumb-cell">
-          <div class="thumb-holder shadow-down-2px">			  
-			<div class="thumb-image-container" style="margin-top: 0px">
-		      <img class="thumb-image" src="img/thumb-seven0.png" alt="..."/>
+          <div class="thumb-holder">			  
+			<div class="thumb-image-container">
+				<div class="cycler" style="width: 100%; height: 100%; overflow: hidden;">
+					<img class="active thumb-image" src="img/thumb-seven0.png" />
+					<img class="thumb-image" src="img/thumb-seven1.png" />
+					<img class="thumb-image" src="img/thumb-seven2.png" />
+					<img class="thumb-image" src="img/thumb-seven3.png" />
+				</div>
+<!--		      <img class="thumb-image" src="img/thumb-seven0.png" alt="..."/>-->
               <img class="thumb-icon" src="img/icon-seven.png"/>
 			</div>
             <p class="thumb-title">Seven</p>
