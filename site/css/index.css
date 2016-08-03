@@ -37,10 +37,6 @@ body {
 	margin-bottom: 48px;
 	z-index: 1;
 }
-.row {
-	width: auto;
-	margin: 0 auto
-}
 .thumb-holder {
 	display: inline-block;
 	position: relative;
