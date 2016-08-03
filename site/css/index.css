@@ -3,6 +3,8 @@
 body {
   font-family: NokiaFC;
   font-size: 14px;
+  font-smooth: never;
+  -webkit-font-smoothing : none;
   background-image: url(../img/background0.png);
 	overflow-x: hidden;
 	
@@ -101,12 +103,12 @@ body {
 	box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.15);
 }
 .thumb-title {
-	color: #826351;
+	color: #627180;
 	font-size: 32px;
 	margin-bottom: 0;
 }
 .thumb-subtitle {
-	color: #826351;
+	color: #627180;
 	font-size: 24px;
 	margin-top: -8px;
 	margin-bottom: 6px;
