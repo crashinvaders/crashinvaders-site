@@ -234,7 +234,7 @@ body {
 
 
 #main-container {
-	padding: 64px 0 40px 0;
+	padding: 48px 0 40px 0;
 	position: relative;
 	border-style: solid;
 	border-width: 0px 4px;
@@ -289,7 +289,7 @@ body {
 }
 #about-pane {
 	margin: auto;
-	margin-bottom: 80px;
+	margin-bottom: 64px;
 	max-width: 600px;
 	position: relative;
 	
