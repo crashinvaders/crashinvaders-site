@@ -124,17 +124,24 @@ body {
 	margin-top: 4px;
 	margin-bottom: 16px;
 }
+.thumb-links-pane {
+	display: block;
+	text-shadow: initial;
+	background-color: #e3c2a3;
+	margin: 0;
+	padding-top: 8px;
+	padding-bottom: 4px;
+}
 .thumb-available-text {
 	color: #826351;
 	font-size: 18px;
 	margin-bottom: 2px;
 }
-.thumb-links-pane {
-	display: block;
-	background-color: #e3c2a3;
-	margin: 0;
-	padding-top: 8px;
-	padding-bottom: 4px;
+.thumb-release-date-text {
+	color: #a3816d;
+	font-size: 12px;
+	margin-top: 4px;
+	margin-bottom: 2px;
 }
 .btn-app-link {
 	margin: 0 4px;
