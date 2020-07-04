@@ -14,11 +14,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	  
+  	<meta name="theme-color" content="#edd5be">
     <meta name="description" content="Crashinvaders Official Site">
     <meta name="author" content="Metaphore">
-    <meta name="google-site-verification" content="DlhZ40EQqdoDURJOcpZPqqfIKhL6ZZ3jtxHP1Wawono" />
+    <meta name="google-site-verification" content="DlhZ40EQqdoDURJOcpZPqqfIKhL6ZZ3jtxHP1Wawono">
     <link rel="icon" href="favicon.ico">
 	<link rel="shortcut icon" href="favicon.png" type="image/png">
 
@@ -35,7 +34,6 @@
 <!--    <script type="text/javascript" src="js/jquery-ui-1.8.14.custom.min.js"></script>-->
     <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
     <script type="text/javascript" src="js/image-cycler.js"></script>
-    <script type="text/javascript" src="js/responsive-content.js"></script>
 	  
   </head>
 
@@ -54,15 +52,15 @@
         <div id="about-pane">
           <div class="about-text">
             <p>Hey there stranger!</p>
-			  <p class="text-justify">We are two-man game development team full of ideas and ambitions.</p>				
-			  <p class="text-justify">Since 2012 we've been working on our own projects, take some freelance orders and always open for interesting offers. Regardless of your purpose, we're glad that you've come. Feel free to contact us, we would love to talk! :)</p>			  
+			  <p class="text-justify">We are two-man game dev team full of ideas and ambitions.</p>				
+			  <p class="text-justify">Since 2012 we've been working on our own projects, take some freelance jobs and are always open for interesting offers. Regardless of the purpose, we're glad that you've come. Feel free to contact us, we would love to talk! :)</p>			  
 <!--			<p>Our favorite framework is <a target="_blank" href="https://libgdx.badlogicgames.com" style="color: #cc4444; background-color: #f1e3d6; padding: 2px 2px 0px 4px;"><span style="color: #444">lib</span>GDX</a> and we totaly in love with it.</p>-->			  
 			<p class="text-right" style="margin-top: 16px">Yours Sincerely,<br/>Crashs</p>
         </div>
       </div>
 
       <div class="section-title-bg">
-		<div id="section-title-our-games" class="section-title-text"></div>
+		<div class="section-title-text">Our Games</div>
 	  	<img class="section-badge" src="img/section-badge-games.png"/>
       </div> 
 
@@ -73,28 +71,28 @@
 			<div class="thumb-image-container">
 			  <div class="cycler" style="width: 100%; height: 100%; overflow: hidden;">
 				<img class="active thumb-image" src="img/thumb-getreact0.png" />
-				<img class="thumb-image" src="img/thumb-getreact1.png" />	
-				<img class="thumb-image" src="img/thumb-getreact2.png" />	
-				<img class="thumb-image" src="img/thumb-getreact3.png" />	
-				<img class="thumb-image" src="img/thumb-getreact4.png" />	
-				<img class="thumb-image" src="img/thumb-getreact5.png" />	
+				<img class="thumb-image" src="img/thumb-getreact1.png"></img>
+				<img class="thumb-image" src="img/thumb-getreact2.png"></img>
+				<img class="thumb-image" src="img/thumb-getreact3.png"></img>
+				<img class="thumb-image" src="img/thumb-getreact4.png"></img>
+				<img class="thumb-image" src="img/thumb-getreact5.png"></img>
 			  </div>
-              <img class="thumb-icon" src="img/icon-getreact.png"/>
+              <img class="thumb-icon" src="img/icon-getreact.png"></img>
 			</div>
             <p class="thumb-title">Dash React</p>
-            <p class="thumb-desc text-center">Hardcore procedural arcade in old fashion style</p>
+            <p class="thumb-desc text-center">Old fashion procedural hardcore arcade</p>
             <div class="thumb-links-pane">				
-				<p class="thumb-available-text">Release soon:</p>
+				<p class="thumb-available-text">Re-release soon:</p>
 				<div style="display: inline-block"><!--
 				  <a class="btn-app-link btn-appstore" target="_blank"
                      href="https://itunes.apple.com/app/id1075864120"></a>
 				  <a class="btn-app-link btn-android" target="_blank"
 					 href="https://play.google.com/store/apps/details?id=com.crashinvaders.magnetter.android"></a>  -->   
-				  <a href="#" class="btn-app-link btn-appstore inactive-link">
-                     <img class="soon-badge" src="img/soon-badge.png"/>
+				  <a href="#" class="btn-app-link btn-appstore-disabled inactive-link">
+					  <img class="soon-badge" src="img/soon-badge.png"><img>
                   </a>  
-				  <a href="#" class="btn-app-link btn-android inactive-link">
-                     <img class="soon-badge" src="img/soon-badge.png"/>
+				  <a href="#" class="btn-app-link btn-android-disabled inactive-link">
+                     <img class="soon-badge" src="img/soon-badge.png"><img>
                   </a>  
 				  <a class="btn-app-link btn-web" target="_blank"
 					 href="http://crashinvaders.com/getreact"></a>
@@ -166,11 +164,40 @@
       </div> 
 		
 	  <div class="section-title-bg">
-		<div id="section-title-commercial" class="section-title-text"></div>
+		<div class="section-title-text" data-short-text="Commercial">Commercial Projects</div>
 	  	<img class="section-badge" src="img/section-badge-commercial.png"/>
       </div> 
 
       <div class="row" style="display: inline-block">
+
+		  <div class="col-sm-12 col-md-6 thumb-cell">
+			  <div class="thumb-holder">
+				  <div class="thumb-image-container">
+					  <div class="cycler" style="width: 100%; height: 100%; overflow: hidden;">
+						  <img class="active thumb-image" src="img/thumb-fridge-party0.png" />
+						  <img class="thumb-image" src="img/thumb-fridge-party1.png" />
+						  <img class="thumb-image" src="img/thumb-fridge-party2.png" />
+						  <img class="thumb-image" src="img/thumb-fridge-party3.png" />
+					  </div>
+					  <img class="thumb-icon" src="img/icon-fridge-party.png"/>
+				  </div>
+				  <p class="thumb-title" style="font-size: 24px; margin-bottom: 6px;">Fridge Party</p>
+				  <p class="thumb-desc text-center">Feed the hungry cats with whatever you find in households' fridges before they wake up!</p>
+				  <div class="thumb-links-pane">
+					  <p class="thumb-available-text">Available now on:</p>
+					  <div style="display: inline-block">
+						  <a class="btn-app-link btn-appstore" target="_blank"
+							 href="https://itunes.apple.com/app/id1352761622"></a>
+						  <a class="btn-app-link btn-android" target="_blank"
+							 href="https://play.google.com/store/apps/details?id=com.enmotivo.fridgeparty"></a>
+						  <a class="btn-app-link btn-web" target="_blank"
+							 href="http://fridgeparty.com"></a>
+						  <!-- <a href="#" class="btn-app-link btn-android inactive-link">
+                            <img class="soon-badge" src="img/soon-badge.png"/></a>  -->
+					  </div>
+				  </div>
+			  </div>
+		  </div>
 		  		  
         <div class="col-sm-12 col-md-6 thumb-cell">
           <div class="thumb-holder">			  
@@ -198,11 +225,11 @@
           </div>
         </div>
 		  
-      </div> 		
+      </div>
 
       <div class="section-title-bg">
-		<div id="section-title-experiments" class="section-title-text">Experiments and other</div>
-	  	<img class="section-badge" src="img/section-badge-experiments.png"/>
+		<div class="section-title-text" data-short-text="Game Jams">Game Jams & Hackathons</div>
+	  	<img class="section-badge" src="img/section-badge-game-jams.png"/>
       </div> 
 		
   	  <div class="row" style="display: inline-block">
@@ -219,9 +246,9 @@
               <img class="thumb-icon" src="img/icon-trashville.png"/>
 			</div>
             <p class="thumb-title" style="font-size: 24px; margin-bottom: 6px">Trashville Incident</p>
-            <p class="thumb-desc text-center">Construct your monster from a dead parts and kick all orcs away from the village</p>
+            <p class="thumb-desc text-center">Slice up your monster and kick all the orcs away</p>
             <div class="thumb-links-pane">				
-				<p class="thumb-available-text">Play it now on</p>
+				<p class="thumb-available-text">Play it now on:</p>
 				<div style="display: inline-block">
 				  <a class="btn-app-link btn-web" target="_blank"
 					 href="http://crashinvaders.com/trashville"></a>				  
@@ -242,9 +269,9 @@
               <img class="thumb-icon" src="img/icon-thelastpals.png"/>
 			</div>
             <p class="thumb-title">The Last Pals</p>
-            <p class="thumb-desc text-center">Gather your party wise and beat an opponent</p>
+            <p class="thumb-desc text-center">Wisely gather your company and beat an opponent</p>
             <div class="thumb-links-pane">				
-				<p class="thumb-available-text">Play it now on</p>
+				<p class="thumb-available-text">Play it now on:</p>
 				<div style="display: inline-block">
 				  <a class="btn-app-link btn-web" target="_blank"
 					 href="http://crashinvaders.com/thelastpals"></a>				  
@@ -252,9 +279,59 @@
 		    </div>
           </div>
         </div>
-		  
-		<!-- Grid -->
-      </div> 	
+
+      </div>
+
+      <div class="section-title-bg">
+		<div class="section-title-text" data-short-text="Tools & Libs">Tools and Libraries</div>
+	  	<img class="section-badge" src="img/section-badge-tools.png"/>
+      </div>
+
+  	  <div class="row" style="display: inline-block">
+
+        <div class="col-sm-12 col-md-6 thumb-cell">
+          <div class="thumb-holder">
+			<div class="thumb-image-container">
+			  <div class="cycler" style="width: 100%; height: 100%; overflow: hidden;">
+				<img class="active thumb-image" src="img/thumb-gdx-tp0.png" />
+				<img class="thumb-image" src="img/thumb-gdx-tp0.png"/>
+			  </div>
+              <img class="thumb-icon" src="img/icon-gdx-tp.png"/>
+			</div>
+            <p class="thumb-title" style="font-size: 24px; margin-bottom: 6px">GDX Texture Packer</p>
+            <p class="thumb-desc text-center">Packs and manages texture atlases for LibGDX game framework</p>
+            <div class="thumb-links-pane">
+				<p class="thumb-available-text">Get it now on:</p>
+				<div style="display: inline-block">
+				  <a class="btn-app-link btn-gh" target="_blank"
+					 href="https://github.com/crashinvaders/gdx-texture-packer-gui"></a>
+				</div>
+		    </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 thumb-cell">
+          <div class="thumb-holder">
+			<div class="thumb-image-container">
+			  <div class="cycler" style="width: 100%; height: 100%; overflow: hidden;">
+				<img class="active thumb-image" src="img/thumb-gdx-vfx0.png" />
+				<img class="thumb-image" src="img/thumb-gdx-vfx0.png" />
+			  </div>
+              <img class="thumb-icon" src="img/icon-gdx-vfx.png"/>
+			</div>
+            <p class="thumb-title">GDX VFX</p>
+            <p class="thumb-desc text-center">LibGDX post-processing visual effects library</p>
+            <div class="thumb-links-pane">
+				<p class="thumb-available-text">Get it now on:</p>
+				<div style="display: inline-block">
+				  <a class="btn-app-link btn-gh" target="_blank"
+					 href="https://github.com/crashinvaders/gdx-vfx"></a>
+				</div>
+		    </div>
+          </div>
+        </div>
+
+      </div>
 		
 	  <div id="grounding-left"></div>
 	  <div id="grounding-right"></div>
@@ -262,7 +339,7 @@
 	  <div>
 	    <div id="face-holder">
 	      <input id="face-miha" type="image" src="img/face-miha.png" onclick="window.open('https://vk.com/theface')" oncontextmenu="return false;"/>
-		  <input id="face-antoha" type="image" src="img/face-antoha.png"   onclick="window.open('https://vk.com/mtphr')" oncontextmenu="return false;"/>
+		  <input id="face-antoha" type="image" src="img/face-antoha.png" onclick="window.open('https://www.linkedin.com/in/anton-chekulaev-4b69b79a')" oncontextmenu="return false;"></div>
 	    </div>
 	  </div>
 
@@ -272,7 +349,7 @@
 
     <footer id="footer-frame" class="footer">
       <div class="container-fluid">
-        <p id="credits-text" class="text-center">© 2012-2017 Crashinvaders</p>
+        <p id="credits-text" class="text-center">© 2012-2020 Crashinvaders</p>
         <div class="text-center" style="margin: auto;">
           <div style="display: inline-block; margin-bottom: -5px">
             <a href="mailto:contact@crashinvaders.com" target="_blank"
@@ -294,6 +371,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript" src="js/responsive-content.js"></script>
 	  
   </body>
 </html>

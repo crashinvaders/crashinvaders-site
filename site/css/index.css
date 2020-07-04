@@ -44,18 +44,20 @@ body {
   	text-shadow: 0 2px rgba(0,0,0,0.1);
 	
 	border-style: solid;
-	border-width: 4px 4px 8px;
-	-moz-border-image: url('../img/pane0-bg.png') 4 4 8 repeat;
-	-webkit-border-image: url('../img/pane0-bg.png') 4 4 8 repeat;
-	-o-border-image: url('../img/pane0-bg.png') 4 4 8 repeat;
-	border-image: url('../img/pane0-bg.png') 4 4 8 fill repeat;
+	border-width: 10px 10px 18px 10px;
+	-moz-border-image: url('../img/pane0-bg.png') 10 10 18 10 repeat;
+	-webkit-border-image: url('../img/pane0-bg.png') 10 10 18 10 repeat;
+	-o-border-image: url('../img/pane0-bg.png') 10 10 18 10 repeat;
+	border-image: url('../img/pane0-bg.png') 10 10 18 10 fill repeat;
 }
 .thumb-image-container {
 	position: relative;
 	display: block;
-	width: 100%;
+	width: 312px;
 	height: 192px;
 	margin-bottom: 12px;
+	margin-left: -6px;
+	margin-top: -6px;
 }
 .thumb-image-container:after {
 	position: absolute;
@@ -103,7 +105,7 @@ body {
 	box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.15);
 }
 .thumb-title {
-	color: #527583;
+	color: #587e80;
 	font-size: 32px;
 	margin-bottom: 0;
 }
@@ -130,16 +132,16 @@ body {
 .thumb-links-pane {
 	display: block;
 	background-color: #e3c2a3;
-	margin: 0 2px 2px 2px;
+	margin: 0;
 	padding-top: 8px;
 	padding-bottom: 4px;
 }
-.btn-app-link { 
+.btn-app-link {
 	margin: 0 4px;
 	float: left;
 	background-size: 100% 100%;
-	width: 48px;
-	height: 50px;
+	width: 52px;
+	height: 52px;
 	display: inline;
 }
 .btn-appstore {
@@ -148,17 +150,17 @@ body {
 .btn-appstore:active, .btn-appstore:hover {
 	background-image: url("../img/btn-thumb-ios-down.png");
 }
-.btn-appstore-empty {
-	background-image: url("../img/btn-thumb-ios-empty.png");
+.btn-appstore-disabled {
+	background-image: url("../img/btn-thumb-ios-disabled.png");
 }
 .btn-android {
 	background-image: url("../img/btn-thumb-android-up.png");
 }
 .btn-android:active, .btn-android:hover {
 	background-image: url("../img/btn-thumb-android-down.png");
-}}
-.btn-android-empty {
-	background-image: url("../img/btn-thumb-android-empty.png");
+}
+.btn-android-disabled {
+	background-image: url("../img/btn-thumb-android-disabled.png");
 }
 .btn-web {
 	background-image: url("../img/btn-thumb-web-up.png");
@@ -166,14 +168,19 @@ body {
 .btn-web:active, .btn-web:hover {
 	background-image: url("../img/btn-thumb-web-down.png");
 }
+.btn-gh {
+	background-image: url("../img/btn-thumb-gh-up.png");
+}
+.btn-gh:active, .btn-gh:hover {
+	background-image: url("../img/btn-thumb-gh-down.png");
+}
 .inactive-link {
    pointer-events: none;
    cursor: default;
 }
 .soon-badge {
-	position: relative;
-	left: -2px;
-	top: 14px;
+	width: 100%;
+	margin-top: 34px;
 }
 .btn-social-link {  
 	margin: 0 4px;
@@ -213,11 +220,11 @@ body {
 	height: 70px;
 	
 	border-style: solid;
-	border-width: 3px 70px 51px 56px;
-	-moz-border-image: url(../img/section-title.png) 3 70 51 56 stretch;
-	-webkit-border-image: url(../img/section-title.png) 3 70 51 56 stretch;
-	-o-border-image: url(../img/section-title.png) 3 70 51 56 stretch;
-	border-image: url(../img/section-title.png) 3 70 51 56 fill stretch;
+	border-width: 3px 70px 53px 56px;
+	-moz-border-image: url(../img/section-title.png) 3 70 53 56 stretch;
+	-webkit-border-image: url(../img/section-title.png) 3 70 53 56 stretch;
+	-o-border-image: url(../img/section-title.png) 3 70 53 56 stretch;
+	border-image: url(../img/section-title.png) 3 70 53 56 fill stretch;
 }
 .section-title-text {
 	color: #826351;
@@ -230,6 +237,11 @@ body {
 	top: 0;
 	margin-top: -9px;
 	margin-left: -300px;
+}
+@media (max-width: 600px) {
+	.section-badge {
+		margin-left: -190px;
+	}
 }
 
 
@@ -294,11 +306,11 @@ body {
 	position: relative;
 	
 	border-style: solid;
-	border-width: 60px;
-	-moz-border-image: url(../img/paper-pane.png) 60 stretch;
-	-webkit-border-image: url(../img/paper-pane.png) 60 stretch;
-	-o-border-image: url(../img/paper-pane.png) 60 stretch;
-	border-image: url(../img/paper-pane.png) 60 fill stretch;
+	border-width: 60px 60px 64px 60px;
+	-moz-border-image: url(../img/paper-pane.png) 60 60 64 60 stretch;
+	-webkit-border-image: url(../img/paper-pane.png) 60 60 64 60 stretch;
+	-o-border-image: url(../img/paper-pane.png) 60 60 64 60 stretch;
+	border-image: url(../img/paper-pane.png) 60 60 64 60 fill stretch;
 }
 .about-text {
 	margin: -24px;
