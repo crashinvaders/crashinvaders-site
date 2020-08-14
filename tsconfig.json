@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "target": "es5",
+    "allowJs": false,
+    "sourceMap": true,
+    "forceConsistentCasingInFileNames": true,
+    "preserveConstEnums": true
+  },
+  "include": [
+    "src/scripts/**/*.ts"
+  ],
+  "exclude": [
+    "build",
+    "node_modules"
+  ]
+}

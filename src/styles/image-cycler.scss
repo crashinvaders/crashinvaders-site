@@ -1,0 +1,26 @@
+.cycler {
+	position: relative;
+
+	img.thumb-image {
+		border: 2px #d7b098 solid;
+		width: 100%;
+		height: 100%;
+
+		position: absolute;
+		left: 0;
+		right: 0;
+
+		z-index: 0;
+		opacity: 1;
+
+		transition: opacity 0s;
+	}
+
+	img.thumb-image.inactive {
+		z-index: 1;
+		opacity: 0;
+
+		transition: opacity 1s;
+	}
+}
+
