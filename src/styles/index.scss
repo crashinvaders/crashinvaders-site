@@ -1,4 +1,4 @@
-$thumbImageBorderRadius: 20px 20px 0 0;
+$thumbImageBorderRadius: 16px 16px 0 0;
 
 @import "image-cycler";
 
@@ -262,11 +262,13 @@ a {
 }
 .thumb-links-pane {
   display: block;
-  text-shadow: initial;
+  text-shadow: none;
   background-color: #e3c2a3;
   margin: 0 -2px 2px;
   padding-top: 8px;
   padding-bottom: 4px;
+
+  box-shadow: 0 -2px 0 0 #d7b098;
 }
 .thumb-available-text {
   color: #826351;
