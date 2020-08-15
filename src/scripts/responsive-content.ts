@@ -5,7 +5,7 @@ type ElementEntry = {
 }
 
 const responsiveEntries = Array<ElementEntry>();
-let wideLayout = false;
+let wasWideLayout = true;
 
 const responsiveElements = document.querySelectorAll("[data-short-text]");
 for (let i = 0; i < responsiveElements.length; i++) {
@@ -22,13 +22,13 @@ for (let i = 0; i < responsiveElements.length; i++) {
 
 function updateResponsiveContent() {
 	const docWidth = document.body.scrollWidth;
-	const localWideLayout = docWidth > 600;
-	if (wideLayout === localWideLayout) return;
+	const isWideLayout = docWidth > 600;
+	if (wasWideLayout === isWideLayout) return;
 
-	wideLayout = localWideLayout;
+	wasWideLayout = isWideLayout;
 	for (let i = 0; i < responsiveEntries.length; i++) {
 		const entry = responsiveEntries[i];
-		entry.element.innerHTML = wideLayout ?
+		entry.element.innerHTML = isWideLayout ?
 			entry.regularContent :
 			entry.shortContent;
 	}

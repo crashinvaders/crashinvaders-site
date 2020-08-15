@@ -5,11 +5,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110119116-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'UA-110119116-1');
     </script>
@@ -17,7 +13,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-    <meta name="theme-color" content="#edd5be">
+    <meta name="theme-color" content="#d7b098">
     <meta name="description" content="Crashinvaders Official Site">
     <meta name="author" content="Metaphore">
     <meta name="google-site-verification" content="DlhZ40EQqdoDURJOcpZPqqfIKhL6ZZ3jtxHP1Wawono">
@@ -26,39 +22,37 @@
 
     <title>Crashinvaders</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
     <link type="text/css" href="css/index.min.css" rel="stylesheet">
-    <!--    <link type="text/css" href="css/ui-lightness/jquery-ui-1.8.14.custom.css" rel="stylesheet" />-->
-
-    <!--    <script type="text/javascript" src="js/jquery-ui-1.8.14.custom.min.js"></script>-->
-    <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
-
 </head>
 
 <body>
 
-<div id="header-frame" class="container-fluid">
-    <div id="header-bg"></div>
-    <img id="img-logo" class="center-block" src="images/crash-logo.png"/>
-    <div id="header-shadow"></div>
+<div class="header-frame">
+    <img class="header-logo" src="images/crash-logo.png"/>
 </div>
-<!-- <div id="header-shadow"></div> -->
 
-<div id="main-container" class="container text-center">
-    <div id="main-container-background"></div>
+<div class="main-container">
+    <div class="ground-pile left"></div>
+    <div class="ground-pile right"></div>
 
-    <div id="about-pane">
-        <div class="about-text">
-            <p>Hey there stranger!</p>
-            <p class="text-justify">We are two-man game dev team full of ideas and ambitions.</p>
-            <p class="text-justify">Since 2012 we've been working on our own projects, take some freelance jobs and are
+    <div class="about-pane">
+        <div>
+            <p style="text-align: center">
+                Hey there stranger!
+            </p>
+            <p style="text-align: justify">
+                We are two-man game dev team full of ideas and ambitions.
+            </p>
+            <p style="text-align: justify">
+                Since 2012 we've been working on our own projects, take some freelance jobs and are
                 always open for interesting offers. Regardless of the purpose, we're glad that you've come. Feel free to
-                contact us, we would love to talk! :)</p>
-            <!--			<p>Our favorite framework is <a target="_blank" href="https://libgdx.badlogicgames.com" style="color: #cc4444; background-color: #f1e3d6; padding: 2px 2px 0px 4px;"><span style="color: #444">lib</span>GDX</a> and we totaly in love with it.</p>-->
-            <p class="text-right" style="margin-top: 16px">Yours Sincerely,<br/>Crashs</p>
+                contact us, we would love to talk! :)
+            </p>
+            <p style="margin-top: 16px; text-align: right">
+                Yours Sincerely,
+                <br/>
+                Crashs
+            </p>
         </div>
     </div>
 
@@ -67,100 +61,88 @@
         <img class="section-badge" src="images/section-badge-games.png"/>
     </div>
 
-    <div class="row" style="display: inline-block;">
+    <div class="feature-section">
 
-        <div class="col-sm-12 col-lg-4 thumb-cell">
-            <div class="thumb-holder">
-                <div class="thumb-image-container">
-                    <div class="cycler" data-thumb-cycle-images="
-					   images/thumb-getreact0.png,
-					   images/thumb-getreact1.png,
-					   images/thumb-getreact2.png,
-					   images/thumb-getreact3.png,
-					   images/thumb-getreact4.png,
-					   images/thumb-getreact5.png"></div>
-                    <img class="thumb-icon" src="images/icon-getreact.png"/>
+        <div class="feature-item">
+            <div class="thumb-image-container">
+                <div class="cycler" data-thumb-cycle-images="
+                   images/thumb-getreact0.png,
+                   images/thumb-getreact1.png,
+                   images/thumb-getreact2.png,
+                   images/thumb-getreact3.png,
+                   images/thumb-getreact4.png,
+                   images/thumb-getreact5.png"></div>
+                <img class="thumb-icon" src="images/icon-getreact.png"/>
+                <div class="thumb-image-dim" style="background-color: #5880a7"></div>
+            </div>
+            <p class="thumb-title">Dash React</p>
+            <p class="thumb-desc">Old fashion procedural hardcore arcade</p>
+            <div class="thumb-links-pane">
+                <p class="thumb-available-text">Re-release soon:</p>
+                <div style="display: inline-block"><!--
+              <a class="btn-app-link appstore" target="_blank"
+                 href="https://itunes.apple.com/app/id1075864120"></a>
+              <a class="btn-app-link android" target="_blank"
+                 href="https://play.google.com/store/apps/details?id=com.crashinvaders.magnetter.android"></a>  -->
+                    <a href="#" class="btn-app-link appstore disabled">
+                        <img class="soon-badge" src="images/soon-badge.png"/>
+                    </a>
+                    <a href="#" class="btn-app-link android disabled">
+                        <img class="soon-badge" src="images/soon-badge.png"/>
+                    </a>
+                    <a class="btn-app-link web" target="_blank"
+                       href="http://crashinvaders.com/getreact"></a>
                 </div>
-                <p class="thumb-title">Dash React</p>
-                <p class="thumb-desc text-center">Old fashion procedural hardcore arcade</p>
-                <div class="thumb-links-pane">
-                    <p class="thumb-available-text">Re-release soon:</p>
-                    <div style="display: inline-block"><!--
-				  <a class="btn-app-link btn-appstore" target="_blank"
-                     href="https://itunes.apple.com/app/id1075864120"></a>
-				  <a class="btn-app-link btn-android" target="_blank"
-					 href="https://play.google.com/store/apps/details?id=com.crashinvaders.magnetter.android"></a>  -->
-                        <a href="#" class="btn-app-link btn-appstore-disabled inactive-link">
-                            <img class="soon-badge" src="images/soon-badge.png"/>
-                        </a>
-                        <a href="#" class="btn-app-link btn-android-disabled inactive-link">
-                            <img class="soon-badge" src="images/soon-badge.png"/>
-                        </a>
-                        <a class="btn-app-link btn-web" target="_blank"
-                           href="http://crashinvaders.com/getreact"></a>
-                    </div>
-                    <div class="thumb-release-date-text">--- 2015 ---</div>
-                </div>
+                <div class="thumb-release-date-text">--- 2015 ---</div>
             </div>
         </div>
 
-        <div class="col-sm-12 col-lg-4 thumb-cell">
-            <div class="thumb-holder">
-                <div class="thumb-image-container">
-                    <div class="cycler" data-thumb-cycle-images="
-							  images/thumb-jdog0.png,
-							  images/thumb-jdog1.png,
-							  images/thumb-jdog2.png,
-							  images/thumb-jdog3.png,
-							  images/thumb-jdog4.png"></div>
-                    <img class="thumb-icon" src="images/icon-jdog.png"/>
+        <div class="feature-item">
+            <div class="thumb-image-container">
+                <div class="cycler" data-thumb-cycle-images="
+                          images/thumb-jdog0.png,
+                          images/thumb-jdog1.png,
+                          images/thumb-jdog2.png,
+                          images/thumb-jdog3.png,
+                          images/thumb-jdog4.png"></div>
+                <img class="thumb-icon" src="images/icon-jdog.png"/>
+                <div class="thumb-image-dim" style="background-color: #9f6d08"></div>
+            </div>
+            <p class="thumb-title">Jolly Dog</p>
+            <p class="thumb-desc">Simple yet beatiful game for your beloved pet</p>
+            <div class="thumb-links-pane">
+                <p class="thumb-available-text">Available now on:</p>
+                <div style="display: inline-block">
+                    <a class="btn-app-link appstore" target="_blank"
+                       href="https://itunes.apple.com/app/id1153421262"></a>
+                    <a class="btn-app-link android" target="_blank"
+                       href="https://play.google.com/store/apps/details?id=com.crashinvaders.jollydog"></a>
                 </div>
-                <p class="thumb-title">Jolly Dog</p>
-                <p class="thumb-desc text-center">Simple yet beatiful game for your beloved pet</p>
-                <div class="thumb-links-pane">
-                    <p class="thumb-available-text">Available now on:</p>
-                    <div style="display: inline-block">
-                        <a class="btn-app-link btn-appstore" target="_blank"
-                           href="https://itunes.apple.com/app/id1153421262"></a>
-                        <a class="btn-app-link btn-android" target="_blank"
-                           href="https://play.google.com/store/apps/details?id=com.crashinvaders.jollydog"></a>
-                    </div>
-                    <div class="thumb-release-date-text">--- 2016 ---</div>
-                </div>
-                <!--		Example of "Available soon" placeholder
-                            <div class="thumb-links-pane" style="background-color: #abd5d6">
-                                <p class="thumb-available-text" style="color: #527583">Available soon...</p>
-                            </div>
-                -->
+                <div class="thumb-release-date-text">--- 2016 ---</div>
             </div>
         </div>
 
-        <div class="col-sm-12 col-lg-4 thumb-cell">
-            <div class="thumb-holder">
-                <div class="thumb-image-container">
-                    <div class="cycler" data-thumb-cycle-images="
-							  images/thumb-seven0.png,
-							  images/thumb-seven1.png,
-							  images/thumb-seven2.png,
-							  images/thumb-seven3.png"></div>
-                    <img class="thumb-icon smooth-render" src="images/icon-seven.png"/>
+        <div class="feature-item">
+            <div class="thumb-image-container">
+                <div class="cycler" data-thumb-cycle-images="
+                          images/thumb-seven0.png,
+                          images/thumb-seven1.png,
+                          images/thumb-seven2.png,
+                          images/thumb-seven3.png"></div>
+                <img class="thumb-icon smooth-render" src="images/icon-seven.png"/>
+                <div class="thumb-image-dim" style="background-color: #15587c"></div>
+            </div>
+            <p class="thumb-title">Seven</p>
+            <p class="thumb-desc">One of the most popular drinking games on the mobile market </p>
+            <div class="thumb-links-pane">
+                <p class="thumb-available-text">Available now on:</p>
+                <div style="display: inline-block">
+                    <a href="https://itunes.apple.com/app/id1097472871" target="_blank"
+                       class="btn-app-link appstore"></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.crashinvaders.seven" target="_blank"
+                       class="btn-app-link android"></a>
                 </div>
-                <p class="thumb-title">Seven</p>
-                <p class="thumb-desc text-center">One of the most popular drinking games across the mobile market </p>
-                <div class="thumb-links-pane">
-                    <p class="thumb-available-text">Available now on:</p>
-                    <div style="display: inline-block">
-                        <a href="https://itunes.apple.com/app/id1097472871" target="_blank"
-                           class="btn-app-link btn-appstore"></a>
-                        <a href="https://play.google.com/store/apps/details?id=com.crashinvaders.seven" target="_blank"
-                           class="btn-app-link btn-android"></a>
-                        <!-- Example of inactive link -->
-                        <!-- <a href="#" class="btn-app-link btn-appstore inactive-link">
-                          <img class="soon-badge" src="images/soon-badge.png" />
-                        </a> -->
-                    </div>
-                    <div class="thumb-release-date-text">--- 2012 ---</div>
-                </div>
+                <div class="thumb-release-date-text">--- 2012 ---</div>
             </div>
         </div>
 
@@ -171,61 +153,55 @@
         <img class="section-badge" src="images/section-badge-commercial.png"/>
     </div>
 
-    <div class="row" style="display: inline-block">
+    <div class="feature-section">
 
-        <div class="col-sm-12 col-md-6 thumb-cell">
-            <div class="thumb-holder">
-                <div class="thumb-image-container">
-                    <div class="cycler" data-thumb-cycle-images="
+        <div class="feature-item">
+            <div class="thumb-image-container">
+                <div class="cycler" data-thumb-cycle-images="
 							  images/thumb-fridge-party0.png,
 							  images/thumb-fridge-party1.png,
 							  images/thumb-fridge-party2.png,
 							  images/thumb-fridge-party3.png"></div>
-                    <img class="thumb-icon" src="images/icon-fridge-party.png"/>
+                <img class="thumb-icon" src="images/icon-fridge-party.png"/>
+                <div class="thumb-image-dim" style="background-color: #434f6b"></div>
+            </div>
+            <p class="thumb-title" style="font-size: 24px; margin-bottom: 6px;">Fridge Party</p>
+            <p class="thumb-desc">Feed the hungry cats with whatever you find in households' fridges
+                before they wake up!</p>
+            <div class="thumb-links-pane">
+                <p class="thumb-available-text">Available now on:</p>
+                <div style="display: inline-block">
+                    <a class="btn-app-link appstore" target="_blank"
+                       href="https://itunes.apple.com/app/id1352761622"></a>
+                    <a class="btn-app-link android" target="_blank"
+                       href="https://play.google.com/store/apps/details?id=com.enmotivo.fridgeparty"></a>
+                    <a class="btn-app-link web" target="_blank"
+                       href="http://fridgeparty.com"></a>
                 </div>
-                <p class="thumb-title" style="font-size: 24px; margin-bottom: 6px;">Fridge Party</p>
-                <p class="thumb-desc text-center">Feed the hungry cats with whatever you find in households' fridges
-                    before they wake up!</p>
-                <div class="thumb-links-pane">
-                    <p class="thumb-available-text">Available now on:</p>
-                    <div style="display: inline-block">
-                        <a class="btn-app-link btn-appstore" target="_blank"
-                           href="https://itunes.apple.com/app/id1352761622"></a>
-                        <a class="btn-app-link btn-android" target="_blank"
-                           href="https://play.google.com/store/apps/details?id=com.enmotivo.fridgeparty"></a>
-                        <a class="btn-app-link btn-web" target="_blank"
-                           href="http://fridgeparty.com"></a>
-                        <!-- <a href="#" class="btn-app-link btn-android inactive-link">
-                          <img class="soon-badge" src="images/soon-badge.png"/></a>  -->
-                    </div>
-                    <div class="thumb-release-date-text">--- 2018 ---</div>
-                </div>
+                <div class="thumb-release-date-text">--- 2018 ---</div>
             </div>
         </div>
 
-        <div class="col-sm-12 col-md-6 thumb-cell">
-            <div class="thumb-holder">
-                <div class="thumb-image-container">
-                    <div class="cycler" data-thumb-cycle-images="
+        <div class="feature-item">
+            <div class="thumb-image-container">
+                <div class="cycler" data-thumb-cycle-images="
 							  images/thumb-icarus0.png,
 							  images/thumb-icarus1.png,
 							  images/thumb-icarus2.png"></div>
-                    <img class="thumb-icon" src="images/icon-icarus.png"/>
+                <img class="thumb-icon" src="images/icon-icarus.png"/>
+                <div class="thumb-image-dim" style="background-color: #27679d"></div>
+            </div>
+            <p class="thumb-title" style="font-size: 24px; margin-bottom: 6px;">Flying With Icarus</p>
+            <p class="thumb-desc">Arcade for kids with mix of greek mythology and all the things</p>
+            <div class="thumb-links-pane">
+                <p class="thumb-available-text">Available now on:</p>
+                <div style="display: inline-block">
+                    <a class="btn-app-link appstore" target="_blank"
+                       href="https://itunes.apple.com/app/id1110277287"></a>
+                    <a class="btn-app-link android" target="_blank"
+                       href="https://play.google.com/store/apps/details?id=com.ithacanmedia.icarusflight"></a>
                 </div>
-                <p class="thumb-title" style="font-size: 24px; margin-bottom: 6px;">Flying With Icarus</p>
-                <p class="thumb-desc text-center">Arcade for kids with mix of greek mythology and all the things</p>
-                <div class="thumb-links-pane">
-                    <p class="thumb-available-text">Available now on:</p>
-                    <div style="display: inline-block">
-                        <a class="btn-app-link btn-appstore" target="_blank"
-                           href="https://itunes.apple.com/app/id1110277287"></a>
-                        <a class="btn-app-link btn-android" target="_blank"
-                           href="https://play.google.com/store/apps/details?id=com.ithacanmedia.icarusflight"></a>
-                        <!-- <a href="#" class="btn-app-link btn-android inactive-link">
-                          <img class="soon-badge" src="images/soon-badge.png"/></a>  -->
-                    </div>
-                    <div class="thumb-release-date-text">--- 2016 ---</div>
-                </div>
+                <div class="thumb-release-date-text">--- 2016 ---</div>
             </div>
         </div>
 
@@ -236,51 +212,49 @@
         <img class="section-badge" src="images/section-badge-game-jams.png"/>
     </div>
 
-    <div class="row" style="display: inline-block">
+    <div class="feature-section">
 
-        <div class="col-sm-12 col-md-6 thumb-cell">
-            <div class="thumb-holder">
-                <div class="thumb-image-container">
-                    <div class="cycler" data-thumb-cycle-images="
+        <div class="feature-item">
+            <div class="thumb-image-container">
+                <div class="cycler" data-thumb-cycle-images="
 							  images/thumb-trashville0.png,
 							  images/thumb-trashville1.png,
 							  images/thumb-trashville2.png,
 							  images/thumb-trashville3.png"></div>
-                    <img class="thumb-icon" src="images/icon-trashville.png"/>
+                <img class="thumb-icon" src="images/icon-trashville.png"/>
+                <div class="thumb-image-dim" style="background-color: #3a4937"></div>
+            </div>
+            <p class="thumb-title" style="font-size: 24px; margin-bottom: 6px">Trashville Incident</p>
+            <p class="thumb-desc">Slice up your monster and kick all the orcs away</p>
+            <div class="thumb-links-pane">
+                <p class="thumb-available-text">Play it now on:</p>
+                <div style="display: inline-block">
+                    <a class="btn-app-link web" target="_blank"
+                       href="http://crashinvaders.com/trashville"></a>
                 </div>
-                <p class="thumb-title" style="font-size: 24px; margin-bottom: 6px">Trashville Incident</p>
-                <p class="thumb-desc text-center">Slice up your monster and kick all the orcs away</p>
-                <div class="thumb-links-pane">
-                    <p class="thumb-available-text">Play it now on:</p>
-                    <div style="display: inline-block">
-                        <a class="btn-app-link btn-web" target="_blank"
-                           href="http://crashinvaders.com/trashville"></a>
-                    </div>
-                    <div class="thumb-release-date-text">--- 2015 ---</div>
-                </div>
+                <div class="thumb-release-date-text">--- 2015 ---</div>
             </div>
         </div>
 
-        <div class="col-sm-12 col-md-6 thumb-cell">
-            <div class="thumb-holder">
-                <div class="thumb-image-container">
-                    <div class="cycler" data-thumb-cycle-images="
+        <div class="feature-item">
+            <div class="thumb-image-container">
+                <div class="cycler" data-thumb-cycle-images="
 							  images/thumb-thelastpals0.png,
 							  images/thumb-thelastpals1.png,
 							  images/thumb-thelastpals2.png,
 							  images/thumb-thelastpals3.png"></div>
-                    <img class="thumb-icon" src="images/icon-thelastpals.png"/>
+                <img class="thumb-icon" src="images/icon-thelastpals.png"/>
+                <div class="thumb-image-dim" style="background-color: #3a4937"></div>
+            </div>
+            <p class="thumb-title">The Last Pals</p>
+            <p class="thumb-desc">Wisely gather your company and beat an opponent</p>
+            <div class="thumb-links-pane">
+                <p class="thumb-available-text">Play it now on:</p>
+                <div style="display: inline-block">
+                    <a class="btn-app-link web" target="_blank"
+                       href="http://crashinvaders.com/thelastpals"></a>
                 </div>
-                <p class="thumb-title">The Last Pals</p>
-                <p class="thumb-desc text-center">Wisely gather your company and beat an opponent</p>
-                <div class="thumb-links-pane">
-                    <p class="thumb-available-text">Play it now on:</p>
-                    <div style="display: inline-block">
-                        <a class="btn-app-link btn-web" target="_blank"
-                           href="http://crashinvaders.com/thelastpals"></a>
-                    </div>
-                    <div class="thumb-release-date-text">--- 2015 ---</div>
-                </div>
+                <div class="thumb-release-date-text">--- 2015 ---</div>
             </div>
         </div>
 
@@ -291,92 +265,78 @@
         <img class="section-badge" src="images/section-badge-tools.png"/>
     </div>
 
-    <div class="row" style="display: inline-block">
+    <div class="feature-section">
 
-        <div class="col-sm-12 col-md-6 thumb-cell">
-            <div class="thumb-holder">
-                <div class="thumb-image-container">
-                    <div class="cycler"
-                         data-thumb-cycle-images="images/thumb-gdx-tp0.png"></div>
-                    <img class="thumb-icon" src="images/icon-gdx-tp.png"/>
+        <div class="feature-item">
+            <div class="thumb-image-container">
+                <div class="cycler"
+                     data-thumb-cycle-images="images/thumb-gdx-tp0.png"></div>
+                <img class="thumb-icon" src="images/icon-gdx-tp.png"/>
+                <div class="thumb-image-dim" style="background-color: #4f4f4f"></div>
+            </div>
+            <p class="thumb-title" style="font-size: 22px; margin-bottom: 6px">GDX Texture Packer</p>
+            <p class="thumb-desc">Packs and manages texture atlases for LibGDX game framework</p>
+            <div class="thumb-links-pane">
+                <p class="thumb-available-text">Get it now on:</p>
+                <div style="display: inline-block">
+                    <a class="btn-app-link github" target="_blank"
+                       href="https://github.com/crashinvaders/gdx-texture-packer-gui"></a>
                 </div>
-                <p class="thumb-title" style="font-size: 22px; margin-bottom: 6px">GDX Texture Packer</p>
-                <p class="thumb-desc text-center">Packs and manages texture atlases for LibGDX game framework</p>
-                <div class="thumb-links-pane">
-                    <p class="thumb-available-text">Get it now on:</p>
-                    <div style="display: inline-block">
-                        <a class="btn-app-link btn-gh" target="_blank"
-                           href="https://github.com/crashinvaders/gdx-texture-packer-gui"></a>
-                    </div>
-                    <div class="thumb-release-date-text">--- 2017 ---</div>
-                </div>
+                <div class="thumb-release-date-text">--- 2017 ---</div>
             </div>
         </div>
 
-        <div class="col-sm-12 col-md-6 thumb-cell">
-            <div class="thumb-holder">
-                <div class="thumb-image-container">
-                    <div class="cycler"
-                         data-thumb-cycle-images="images/thumb-gdx-vfx0.png"></div>
-                    <img class="thumb-icon" src="images/icon-gdx-vfx.png"/>
+        <div class="feature-item">
+            <div class="thumb-image-container">
+                <div class="cycler"
+                     data-thumb-cycle-images="images/thumb-gdx-vfx0.png"></div>
+                <img class="thumb-icon" src="images/icon-gdx-vfx.png"/>
+                <div class="thumb-image-dim" style="background-color: #513b78"></div>
+            </div>
+            <p class="thumb-title">GDX VFX</p>
+            <p class="thumb-desc">LibGDX post-processing visual effects library</p>
+            <div class="thumb-links-pane">
+                <p class="thumb-available-text">Get it now on:</p>
+                <div style="display: inline-block">
+                    <a class="btn-app-link github" target="_blank"
+                       href="https://github.com/crashinvaders/gdx-vfx"></a>
                 </div>
-                <p class="thumb-title">GDX VFX</p>
-                <p class="thumb-desc text-center">LibGDX post-processing visual effects library</p>
-                <div class="thumb-links-pane">
-                    <p class="thumb-available-text">Get it now on:</p>
-                    <div style="display: inline-block">
-                        <a class="btn-app-link btn-gh" target="_blank"
-                           href="https://github.com/crashinvaders/gdx-vfx"></a>
-                    </div>
-                    <div class="thumb-release-date-text">--- 2019 ---</div>
-                </div>
+                <div class="thumb-release-date-text">--- 2019 ---</div>
             </div>
         </div>
 
     </div>
 
-    <div id="grounding-left"></div>
-    <div id="grounding-right"></div>
-
-    <div>
-        <div id="face-holder">
-            <input id="face-miha" type="image" src="images/face-miha.png"
-                   onclick="window.open('https://vk.com/theface')" oncontextmenu="return false;"/>
-            <input id="face-antoha" type="image" src="images/face-antoha.png"
+    <div class="face-holder">
+        <div>
+            <input class="face miha" type="image" src="images/face-miha.png"
+                   onclick="window.open('https://vk.com/theface')"
+                   oncontextmenu="return false"/>
+            <input class="face antoha" type="image" src="images/face-antoha.png"
                    onclick="window.open('https://www.linkedin.com/in/anton-chekulaev-4b69b79a')"
-                   oncontextmenu="return false;"></div>
-    </div>
-</div>
-
-<!-- .container -->
-</div>
-
-
-<footer id="footer-frame" class="footer">
-    <div class="container-fluid">
-        <p id="credits-text" class="text-center">© 2012-2020 Crashinvaders</p>
-        <div class="text-center" style="margin: auto;">
-            <div style="display: inline-block; margin-bottom: -5px">
-                <a href="mailto:contact@crashinvaders.com" target="_blank"
-                   class="btn-social-link btn-social-mail" title="Email"></a>
-                <a href="https://twitter.com/crashinvaders" target="_blank"
-                   class="btn-social-link btn-social-twit" title="Twitter"></a>
-                <a href="https://www.fb.com/crashinvaders/" target="_blank"
-                   class="btn-social-link btn-social-fb" title="Facebook"></a>
-                <a href="https://vk.com/crashinvaders" target="_blank"
-                   class="btn-social-link btn-social-vk" title="VKontakte"></a>
-            </div>
+                   oncontextmenu="return false"></div>
         </div>
     </div>
-</footer>
+</div>
 
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
 
+<div class="footer-pane">
+    <p class="credits-text">© 2012-2020 Crashinvaders</p>
+    <div style="margin: auto;">
+        <div style="display: inline-block; margin-bottom: -5px">
+            <a href="mailto:contact@crashinvaders.com" target="_blank"
+               class="btn-social-link mail" title="Email"></a>
+            <a href="https://twitter.com/crashinvaders" target="_blank"
+               class="btn-social-link twit" title="Twitter"></a>
+            <a href="https://www.fb.com/crashinvaders/" target="_blank"
+               class="btn-social-link fb" title="Facebook"></a>
+            <a href="https://vk.com/crashinvaders" target="_blank"
+               class="btn-social-link vk" title="VKontakte"></a>
+        </div>
+    </div>
+</div>
+
+<!-- Main script -->
 <script type="text/javascript" src="js/index.js"></script>
 
 </body>

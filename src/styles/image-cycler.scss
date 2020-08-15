@@ -1,10 +1,11 @@
-.cycler {
+div.cycler {
 	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
 
 	img.thumb-image {
-		border: 2px #d7b098 solid;
-		width: 100%;
-		height: 100%;
+		border: 2px #8f6f5b solid;
 
 		position: absolute;
 		left: 0;
