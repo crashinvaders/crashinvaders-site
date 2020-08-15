@@ -52,6 +52,6 @@ document.querySelectorAll("div.cycler[data-thumb-cycle-images]").forEach((rootEl
 
     setTimeout(() => setInterval(swapImage, 3000), 500 * rootElemIdx);
 
-    // Preload all the images in background.
-    imageArray.forEach(imgUrl => fetch(imgUrl))
+    //// Preload all the images in background.
+    //imageArray.forEach(imgUrl => fetch(imgUrl))
 })
