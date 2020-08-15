@@ -1,13 +1,8 @@
-const gulp = require('gulp');
-const clean = require('gulp-clean');
-const typescript = require('./gulp/typescript');
-const styles = require('./gulp/styles');
-const html = require('./gulp/html');
-const staticResources = require('./gulp/static');
-const images = require('./gulp/images');
-const devServer = require('./gulp/devServer');
+const gulp = require("gulp");
+const clean = require("gulp-clean");
+const typescript = require("./gulp/typescript");
 
-const outputDir = 'build/';
+const outputDir = "build/";
 
 function cleanupBuildDir() {
     return gulp.src(outputDir, {read: false, allowEmpty: true})
@@ -16,18 +11,21 @@ function cleanupBuildDir() {
 
 module.exports.default = gulp.series(
     cleanupBuildDir,
-    staticResources,
+    require("./gulp/static"),
+    require("./gulp/images"),
+    require("./gulp/images").indexFiles,
     gulp.parallel(
-        devServer,
+        require("./gulp/devServer"),
         typescript.bundleJs,
-        styles,
-        images,
-        html));
+        require("./gulp/styles"),
+        require("./gulp/html")));
 
 module.exports.clean = cleanupBuildDir;
 
-module.exports.deployS3 = require('./gulp/deploy').deployS3;
+module.exports.deployS3 = require("./gulp/deploy").deployS3;
 
 module.exports.compileTs = gulp.series(
     cleanupBuildDir,
     typescript.compileTs);
+
+module.exports.indexPreload = require("./gulp/preloader")

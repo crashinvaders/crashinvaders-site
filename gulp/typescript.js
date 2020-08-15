@@ -30,7 +30,6 @@ function compileTs() {
             declaration: true,
             // declarationMap: true,
             outFile: "datamodel.js"
-
         }))
         // .pipe(filter(["**/*.d.ts"]))
         .pipe(gulp.dest(outputDir));

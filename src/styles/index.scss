@@ -1,15 +1,23 @@
 $thumbImageBorderRadius: 16px 16px 0 0;
 
-@import "image-cycler";
-
-@font-face { font-family: NokiaFC; src: url(../fonts/nokiafc22.ttf); }
-
+$color-blue: #84dfe2;
 $mainContainerPaddingTop: 100px;
 $mainContainerPaddingBottom: 40px;
+$headerLogoMarginTop: -46px;
+$headerLogoWidth: 267px;
+
+@import "image-cycler";
+@import "preloader";
+
+@font-face { font-family: NokiaFC; src: url(../fonts/nokiafc22.ttf); }
 
 html, body {
   margin: 0;
   padding: 0;
+}
+
+html {
+  overflow-y: scroll !important;  // Make scrollbar always visible.
 }
 
 body {
@@ -58,8 +66,8 @@ a {
   box-shadow: 0 4px 0 0 #00000010;
 }
 .header-logo {
-  margin-top: -46px;
-  width: 267px;
+  margin-top: $headerLogoMarginTop;
+  width: $headerLogoWidth;
 }
 
 .main-container {
@@ -378,7 +386,7 @@ a {
   display: inline-block;
   width: 100%;
   text-align: center;
-  background-color: #84dfe2;
+  background-color: $color-blue;
   padding: 16px 0;
   border-top: 2px solid rgb(179,242,237);
   z-index: 100;
