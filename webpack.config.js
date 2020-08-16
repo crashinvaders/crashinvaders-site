@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 
 module.exports = env => {
@@ -13,7 +14,10 @@ module.exports = env => {
     return {
         mode: mode,
         entry: {
-            main: "./src/scripts/index.ts",
+            index: [
+                "./src/scripts/index.ts",
+                "./src/styles/index.scss",
+            ],
         },
         devtool: development ? "eval" : "nosources-source-map",
         devServer: {
@@ -30,6 +34,10 @@ module.exports = env => {
                 cleanStaleWebpackAssets: false,
             }),
             new HtmlWebpackPlugin({ template: "./src/html/index.html" }),
+            new MiniCssExtractPlugin({
+                filename: '[name].[contenthash].css',
+                // chunkFilename: '[id].css',
+            }),
         ],
         module: {
             rules: [
@@ -101,8 +109,10 @@ module.exports = env => {
                         // "file-loader",
                         // "extract-loader",
 
-                        // Creates "style" nodes from JS strings
-                        "style-loader",
+                        MiniCssExtractPlugin.loader,
+
+                        // // Creates "style" nodes from JS strings
+                        // "style-loader",
                         // Translates CSS into CommonJS
                         { loader: "css-loader", options: { sourceMap: development } },
                         // Compiles Sass to CSS
@@ -111,10 +121,14 @@ module.exports = env => {
                 },
                 {
                     test: /\.css$/,
+                    // use: [
+                    //     "style-loader",
+                    //     "css-loader"
+                    // ]
                     use: [
-                        "style-loader",
-                        "css-loader"
-                    ]
+                        MiniCssExtractPlugin.loader,
+                        'css-loader',
+                    ],
                 },
                 // Images
                 {
