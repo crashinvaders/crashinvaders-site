@@ -40,6 +40,12 @@ document.querySelectorAll("div.cycler[data-thumb-cycle-images]").forEach((rootEl
     imgElemInactive.classList.add(ImageClasses.BASE, ImageClasses.INACTIVE);
     rootElem.appendChild(imgElemInactive);
 
+    function preloadNextImage() {
+        const imageIdx = (currentImageIdx + 1) % imageArray.length;
+        fetch(imageArray[currentImageIdx]);
+    }
+    preloadNextImage();
+
     function swapImage() {
         currentImageIdx = (currentImageIdx + 1) % imageArray.length;
 
@@ -50,10 +56,9 @@ document.querySelectorAll("div.cycler[data-thumb-cycle-images]").forEach((rootEl
         const tmp = imgElemActive;
         imgElemActive = imgElemInactive;
         imgElemInactive = tmp;
+
+        preloadNextImage();
     }
 
     setTimeout(() => setInterval(swapImage, 3000), 250 * rootElemIdx);
-
-    //// Preload all the images in background.
-    //imageArray.forEach(imgUrl => fetch(imgUrl))
 })
