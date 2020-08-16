@@ -1,8 +1,12 @@
-import * as preloader from "./preloader"
-import * as aos from "./aos-views"
+import "../styles/index.scss"
+
+//import * as preloader from "./preloader"
 import "./responsive-content"
 import "./image-cycler"
+import * as aos from "./aos-views"
 
-preloader.startPreloading(() => {
+//preloader.startPreloading(() => {
     aos.initialize();
-});
+//});
+
+console.log("BOOO")

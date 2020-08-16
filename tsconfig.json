@@ -1,19 +1,12 @@
 {
   "compilerOptions": {
+    "outDir": "./dist/",
     "noImplicitAny": true,
-    "noImplicitThis": true,
-    "noImplicitReturns": true,
+    "module": "es6",
     "target": "es5",
     "allowJs": false,
     "sourceMap": true,
-    "forceConsistentCasingInFileNames": true,
-    "preserveConstEnums": true
-  },
-  "include": [
-    "src/scripts/**/*.ts"
-  ],
-  "exclude": [
-    "build",
-    "node_modules"
-  ]
+    "removeComments": true,
+    "typeRoots": [ "src/scripts/types", "node_modules/@types"]
+  }
 }

@@ -1,3 +1,6 @@
+import * as AOS from "aos"
+import "aos/dist/aos.css"
+
 export function initialize() {
     // Make all the feature items to appear on scroll.
     document.querySelectorAll("div.feature-item")
@@ -13,6 +16,5 @@ export function initialize() {
         });
 
     // Initialize AOS library.
-    //@ts-ignore
     AOS.init();
 };

@@ -3,6 +3,8 @@
  * data-thumb-cycle-images should contain a coma separated array of image paths (at least one value).
  */
 
+import "../styles/image-cycler.scss"
+
 const ImageClasses = {
     BASE: "thumb-image",
     INACTIVE: "inactive",
@@ -50,7 +52,7 @@ document.querySelectorAll("div.cycler[data-thumb-cycle-images]").forEach((rootEl
         imgElemInactive = tmp;
     }
 
-    setTimeout(() => setInterval(swapImage, 3000), 500 * rootElemIdx);
+    setTimeout(() => setInterval(swapImage, 3000), 250 * rootElemIdx);
 
     //// Preload all the images in background.
     //imageArray.forEach(imgUrl => fetch(imgUrl))
