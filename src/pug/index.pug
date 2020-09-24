@@ -1,0 +1,309 @@
+// For local watch/compilation use command:
+// pug -w .\src\pug -o .\src\pug -P
+
+doctype html
+html(lang="en")
+    head
+        // Global site tag (gtag.js) - Google Analytics
+        script.
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "UA-110119116-1");
+        meta(name="google-site-verification" content="DlhZ40EQqdoDURJOcpZPqqfIKhL6ZZ3jtxHP1Wawono")
+
+        meta(name="description" content="Crashinvaders Official  Site")
+        meta(name="author" content="Anton Chekulaev")
+        meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no")
+        meta(name="theme-color" content="#d7b098")
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+
+        title Crashinvaders
+
+        link(rel="icon" href="../images/favicon.png" type="image/png")
+        link(rel="shortcut icon" href="../images/favicon.png" type="image/png")
+    body
+        div.preloader-overlay
+            div.preloader-content
+                img.preloader-logo(src="../images/crash-logo.png")
+                div.preloader-bar-frame
+                    div.preloader-bar-fill
+
+        div.site-content
+
+            div.header-pane
+                img.header-logo(src="../images/crash-logo.png")
+
+            div.main-container
+                div.ground-pile.left
+                div.ground-pile.right
+
+                div.about-pane(data-aos="fade-right" data-aos-delay="250")
+                    div
+                        p(style="text-align: center").
+                            Hey there stranger!pug
+                        p(style="text-align: justify").
+                            We are two-man game dev team full of ideas and ambitions.
+                        p(style="text-align: justify").
+                            Since 2012 we've been working on our own projects, take some freelance jobs and are
+                            always open for interesting offers. Regardless of the purpose, we're glad that you've come.
+                            Feel free to <a href="mailto:contact@crashinvaders.com">reach us out</a>, we would love to talk! :)
+                        p(style="margin-top: 16px; text-align: right")
+                            | Yours Sincerely,
+                            br
+                            | Crashs
+
+                div.section-title-bg
+                    div.section-title-text Our Games
+                    img.section-badge(src="../images/section-badge-games.png")
+
+                div.feature-section
+
+                    div.feature-item
+                        div.thumb-image-container
+                            div.cycler(data-thumb-cycle-images=
+                            "../images/thumb-getreact0.png, " +
+                            "../images/thumb-getreact1.png, " +
+                            "../images/thumb-getreact2.png, " +
+                            "../images/thumb-getreact3.png, " +
+                            "../images/thumb-getreact4.png, " +
+                            "../images/thumb-getreact5.png")
+                            img.thumb-icon(src="../images/icon-getreact.png")
+                            div.thumb-image-dim(style="background-color: #537699")
+                        div.feature-frame
+                            p.thumb-title Dashy Smash
+                            p.thumb-desc Wild jet-pack arcade with cobwebs and a twist!
+                            div.thumb-links-pane
+                                p.thumb-available-text Re-release soon:
+                                div(style="display: inline-block")
+                                    a.btn-app-link.appstore.disabled(href="#")
+                                        img.soon-badge(src="../images/soon-badge.png")
+                                    a.btn-app-link.android.disabled(href="#")
+                                        img.soon-badge(src="../images/soon-badge.png")
+                                    a.btn-app-link.web(
+                                        target="_blank",
+                                        href="http://crashinvaders.com/getreact")
+                                div.thumb-release-date-text --- 2015 ---
+
+                    div.feature-item
+                        div.thumb-image-container
+                            div.cycler(data-thumb-cycle-images=
+                            "../images/thumb-jdog0.png, " +
+                            "../images/thumb-jdog1.png, " +
+                            "../images/thumb-jdog2.png, " +
+                            "../images/thumb-jdog3.png, " +
+                            "../images/thumb-jdog4.png")
+                            img.thumb-icon(src="../images/icon-jdog.png")
+                            div.thumb-image-dim(style="background-color: #a8853f")
+                        div.feature-frame
+                            p.thumb-title Jolly Dog
+                            p.thumb-desc Simple yet beautiful game for your beloved pet
+                            div.thumb-links-pane
+                                p.thumb-available-text Available now on:
+                                div(style="display: inline-block")
+                                    a.btn-app-link.appstore(
+                                        target="_blank",
+                                        href="https://itunes.apple.com/app/id1153421262")
+                                    a.btn-app-link.android(
+                                        target="_blank",
+                                        href="https://play.google.com/store/apps/details?id=com.crashinvaders.jollydog")
+                                div.thumb-release-date-text --- 2016 ---
+
+                    div.feature-item
+                        div.thumb-image-container
+                            div.cycler(data-thumb-cycle-images=
+                            "../images/thumb-seven0.png, " +
+                            "../images/thumb-seven1.png, " +
+                            "../images/thumb-seven2.png, " +
+                            "../images/thumb-seven3.png")
+                            img.thumb-icon(src="../images/icon-seven.png")
+                            div.thumb-image-dim(style="background-color: #4d7b93")
+                        div.feature-frame
+                            p.thumb-title Seven
+                            p.thumb-desc One of the most popular drinking games on the mobile market
+                            div.thumb-links-pane
+                                p.thumb-available-text Available now on:
+                                div(style="display: inline-block")
+                                    a.btn-app-link.appstore(
+                                        target="_blank",
+                                        href="https://itunes.apple.com/app/id1097472871")
+                                    a.btn-app-link.android(
+                                        target="_blank",
+                                        href="https://play.google.com/store/apps/details?id=com.crashinvaders.seven")
+                                div.thumb-release-date-text --- 2012 ---
+
+                            div(style="padding: 8px 0")
+                                a.article-link(
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://gameskeys.net/underrated-board-games-to-play-on-ios")
+                                    |Read recent article
+
+
+                div.section-title-bg
+                    div.section-title-text(data-short-text="Commercial") Commercial Projects
+                    img.section-badge(src="../images/section-badge-commercial.png")
+
+                div.feature-section
+
+                    div.feature-item
+                        div.thumb-image-container
+                            div.cycler(data-thumb-cycle-images=
+                            "../images/thumb-fridge-party0.png, " +
+                            "../images/thumb-fridge-party1.png, " +
+                            "../images/thumb-fridge-party2.png, " +
+                            "../images/thumb-fridge-party3.png")
+                            img.thumb-icon(src="../images/icon-fridge-party.png")
+                            div.thumb-image-dim(style="background-color: #434f6b")
+                        div.feature-frame
+                            p.thumb-title.small Fridge Party
+                            p.thumb-desc Feed the hungry cats with whatever you find in households' fridges before they wake up!
+                            div.thumb-links-pane
+                                p.thumb-available-text Available now on:
+                                div(style="display: inline-block")
+                                    a.btn-app-link.appstore(
+                                        target="_blank",
+                                        href="https://itunes.apple.com/app/id1352761622")
+                                    a.btn-app-link.android(
+                                        target="_blank",
+                                        href="https://play.google.com/store/apps/details?id=com.enmotivo.fridgeparty")
+                                    a.btn-app-link.web(
+                                        target="_blank",
+                                        href="http://fridgeparty.com")
+                                div.thumb-release-date-text --- 2018 ---
+
+                    div.feature-item
+                        div.thumb-image-container
+                            div.cycler(data-thumb-cycle-images=
+                            "../images/thumb-icarus0.png, " +
+                            "../images/thumb-icarus1.png, " +
+                            "../images/thumb-icarus2.png")
+                            img.thumb-icon(src="../images/icon-icarus.png")
+                            div.thumb-image-dim(style="background-color: #27679d")
+                        div.feature-frame
+                            p.thumb-title.small Flying With Icarus
+                            p.thumb-desc Greek mythology flavoured arcade for kids
+                            div.thumb-links-pane
+                                p.thumb-available-text Available now on:
+                                div(style="display: inline-block")
+                                    a.btn-app-link.appstore(
+                                        target="_blank",
+                                        href="https://itunes.apple.com/app/id1110277287")
+                                    a.btn-app-link.android(
+                                        target="_blank",
+                                        href="https://play.google.com/store/apps/details?id=com.ithacanmedia.icarusflight")
+                                div.thumb-release-date-text --- 2016 ---
+
+
+                div.section-title-bg
+                    div.section-title-text(data-short-text="Game Jams") Game Jams & Hackathons
+                    img.section-badge(src="../images/section-badge-game-jams.png")
+
+                div.feature-section
+
+                    div.feature-item
+                        div.thumb-image-container
+                            div.cycler(data-thumb-cycle-images=
+                            "../images/thumb-trashville0.png, " +
+                            "../images/thumb-trashville1.png, " +
+                            "../images/thumb-trashville2.png, " +
+                            "../images/thumb-trashville3.png")
+                            img.thumb-icon(src="../images/icon-trashville.png")
+                            div.thumb-image-dim(style="background-color: #3a4937")
+                        div.feature-frame
+                            p.thumb-title.small Trashville Incident
+                            p.thumb-desc Slice up your monster and kick all the orcs away
+                            div.thumb-links-pane
+                                p.thumb-available-text Play it now on:
+                                div(style="display: inline-block")
+                                    a.btn-app-link.web(
+                                        target="_blank",
+                                        href="http://crashinvaders.com/trashville")
+                                div.thumb-release-date-text --- 2015 ---
+
+                    div.feature-item
+                        div.thumb-image-container
+                            div.cycler(data-thumb-cycle-images=
+                            "../images/thumb-thelastpals0.png, " +
+                            "../images/thumb-thelastpals1.png, " +
+                            "../images/thumb-thelastpals2.png, " +
+                            "../images/thumb-thelastpals3.png")
+                            img.thumb-icon(src="../images/icon-thelastpals.png")
+                            div.thumb-image-dim(style="background-color: #697b66")
+                        div.feature-frame
+                            p.thumb-title The Last Pals
+                            p.thumb-desc Wisely gather your company and beat an opponent
+                            div.thumb-links-pane
+                                p.thumb-available-text Play it now on:
+                                div(style="display: inline-block")
+                                    a.btn-app-link.web(
+                                        target="_blank",
+                                        href="http://crashinvaders.com/thelastpals")
+                                div.thumb-release-date-text --- 2015 ---
+
+
+                div.section-title-bg
+                    div.section-title-text(data-short-text="Tools & Libs") Tools and Libraries
+                    img.section-badge(src="../images/section-badge-tools.png")
+
+                div.feature-section
+
+                    div.feature-item
+                        div.thumb-image-container
+                            div.cycler(data-thumb-cycle-images="../images/thumb-gdx-tp0.png")
+                            img.thumb-icon.square(src="../images/icon-gdx-tp.png")
+                            div.thumb-image-dim(style="background-color: #999290")
+                        div.feature-frame
+                            p.thumb-title.smaller GDX Texture Packer
+                            p.thumb-desc Packs and manages texture atlases for LibGDX game framework
+                            div.thumb-links-pane
+                                p.thumb-available-text Get it now on:
+                                div(style="display: inline-block")
+                                    a.btn-app-link.github(
+                                        target="_blank",
+                                        href="https://github.com/crashinvaders/gdx-texture-packer-gui")
+                                div.thumb-release-date-text --- 2017 ---
+
+                    div.feature-item
+                        div.thumb-image-container
+                            div.cycler(data-thumb-cycle-images="../images/thumb-gdx-vfx0.png")
+                            img.thumb-icon(src="../images/icon-gdx-vfx.png")
+                            div.thumb-image-dim(style="background-color: #69558d")
+                        div.feature-frame
+                            p.thumb-title GDX VFX
+                            p.thumb-desc LibGDX post-processing visual effects library
+                            div.thumb-links-pane
+                                p.thumb-available-text Get it now on:
+                                div(style="display: inline-block")
+                                    a.btn-app-link.github(
+                                        target="_blank",
+                                        href="https://github.com/crashinvaders/gdx-vfx")
+                                div.thumb-release-date-text --- 2019 ---
+
+
+                // Dev faces
+                div.face-holder
+                    div
+                        input.face.miha(
+                            type="image"
+                            src="../images/face-miha.png"
+                            onclick="window.open('https://vk.com/theface')"
+                            oncontextmenu="return false")
+                        input.face.antoha(
+                            type="image"
+                            src="../images/face-antoha.png"
+                            onclick="window.open('https://www.linkedin.com/in/anton-chekulaev-4b69b79a')"
+                            oncontextmenu="return false")
+
+
+        div.footer-pane
+            p.credits-text 2012-2020 Crashinvaders
+            div(style="margin: auto")
+                div(style="display: inline-block; margin-bottom: -5px")
+                    a.btn-social-link.mail(href="mailto:contact@crashinvaders.com" target="_blank" title="Email")
+                    a.btn-social-link.twit(href="https://twitter.com/crashinvaders" target="_blank" title="Twitter")
+                    a.btn-social-link.fb(href="https://www.fb.com/crashinvaders/" target="_blank" title="Facebook")
+                    a.btn-social-link.vk(href="https://vk.com/crashinvaders" target="_blank" title="VKontakte")

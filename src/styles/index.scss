@@ -245,6 +245,16 @@ a {
   font-size: 32px;
   margin-top: 24px;
   margin-bottom: 8px;
+
+  &.small {
+    font-size: 24px;
+    margin-bottom: 6px;
+  }
+
+  &.smaller {
+    font-size: 22px;
+    margin-bottom: 6px;
+  }
 }
 .thumb-subtitle {
   color: #627180;

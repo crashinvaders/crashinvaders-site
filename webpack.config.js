@@ -33,65 +33,77 @@ module.exports = env => {
             new CleanWebpackPlugin({
                 cleanStaleWebpackAssets: false,
             }),
-            new HtmlWebpackPlugin({ template: "./src/html/index.html" }),
+            new HtmlWebpackPlugin({ template: "./src/pug/index.pug" }),
             new MiniCssExtractPlugin({
                 filename: '[name].[contenthash].css',
                 // chunkFilename: '[id].css',
             }),
         ],
+        resolve: {
+            extensions: [".ts", ".js"],
+        },
+        output: {
+            path: path.resolve(__dirname, "dist"),
+            filename: "[name].[contenthash].js",
+        },
         module: {
             rules: [
-                // HTML
+                // Pug/HTML
                 {
-                    test: /\.html$/,
-                    include: [path.resolve(__dirname, "src/html")],
-                    // exclude: /node_modules/,
-                    use: [{
-                        loader: "html-loader",
-                        options: {
-                            attributes: {
-                                list: [
-                                    {
-                                        tag: "img",
-                                        attribute: "src",
-                                        type: "src",
-                                    },
-                                    {
-                                        tag: "img",
-                                        attribute: "srcset",
-                                        type: "srcset",
-                                    },
-                                    {
-                                        tag: "img",
-                                        attribute: "data-src",
-                                        type: "src",
-                                    },
-                                    {
-                                        tag: "img",
-                                        attribute: "data-srcset",
-                                        type: "srcset",
-                                    },
-                                    {
-                                        tag: "input",
-                                        attribute: "src",
-                                        type: "src",
-                                    },
-                                    {
-                                        attribute: "data-thumb-cycle-images",
-                                        type: "srcset",
-                                    },
-                                    {
-                                        tag: "link",
-                                        attribute: "href",
-                                        type: "src",
-                                        filter: (tag, attribute, attributes, resourcePath) => {
-                                            return /\bicon|\bshortcut icon/i.test(attributes.rel);
+                    test: /\.pug$/,
+                    include: [path.resolve(__dirname, "src/pug")],
+                    exclude: /node_modules/,
+                    use: [
+                        {
+                            loader: "html-loader",
+                            options: {
+                                attributes: {
+                                    list: [
+                                        {
+                                            tag: "img",
+                                            attribute: "src",
+                                            type: "src",
+                                        },
+                                        {
+                                            tag: "img",
+                                            attribute: "srcset",
+                                            type: "srcset",
+                                        },
+                                        {
+                                            tag: "img",
+                                            attribute: "data-src",
+                                            type: "src",
+                                        },
+                                        {
+                                            tag: "img",
+                                            attribute: "data-srcset",
+                                            type: "srcset",
+                                        },
+                                        {
+                                            tag: "input",
+                                            attribute: "src",
+                                            type: "src",
+                                        },
+                                        {
+                                            attribute: "data-thumb-cycle-images",
+                                            type: "srcset",
+                                        },
+                                        {
+                                            tag: "link",
+                                            attribute: "href",
+                                            type: "src",
+                                            filter: (tag, attribute, attributes, resourcePath) => {
+                                                return /\bicon|\bshortcut icon/i.test(attributes.rel);
+                                            }
                                         }
-                                    }
-                                ]
+                                    ]
+                                }
                             }
+                        },
+                        {
+                            loader: "pug-html-loader"
                         }
-                    }],
+                    ],
                 },
                 // Scripts
                 {
@@ -157,14 +169,59 @@ module.exports = env => {
                         },
                     ],
                 },
+                // // HTML
+                // {
+                //     test: /\.html$/,
+                //     // include: [path.resolve(__dirname, "src/html", "src/pug")],
+                //     exclude: /node_modules/,
+                //     use: [{
+                //         loader: "html-loader",
+                //         options: {
+                //             attributes: {
+                //                 list: [
+                //                     {
+                //                         tag: "img",
+                //                         attribute: "src",
+                //                         type: "src",
+                //                     },
+                //                     {
+                //                         tag: "img",
+                //                         attribute: "srcset",
+                //                         type: "srcset",
+                //                     },
+                //                     {
+                //                         tag: "img",
+                //                         attribute: "data-src",
+                //                         type: "src",
+                //                     },
+                //                     {
+                //                         tag: "img",
+                //                         attribute: "data-srcset",
+                //                         type: "srcset",
+                //                     },
+                //                     {
+                //                         tag: "input",
+                //                         attribute: "src",
+                //                         type: "src",
+                //                     },
+                //                     {
+                //                         attribute: "data-thumb-cycle-images",
+                //                         type: "srcset",
+                //                     },
+                //                     {
+                //                         tag: "link",
+                //                         attribute: "href",
+                //                         type: "src",
+                //                         filter: (tag, attribute, attributes, resourcePath) => {
+                //                             return /\bicon|\bshortcut icon/i.test(attributes.rel);
+                //                         }
+                //                     }
+                //                 ]
+                //             }
+                //         }
+                //     }],
+                // },
             ],
-        },
-        resolve: {
-            extensions: [".ts", ".js"],
-        },
-        output: {
-            path: path.resolve(__dirname, "dist"),
-            filename: "[name].[contenthash].js",
         },
     }
 };
