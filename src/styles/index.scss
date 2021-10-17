@@ -238,6 +238,11 @@ a {
     &.square {
       border-radius: 10%;
     }
+
+    &.clean {
+      border-radius: 0%;
+      box-shadow: none
+    }
   }
 }
 .thumb-title {
