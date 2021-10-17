@@ -1,9 +1,7 @@
 # Working with the sources
 
 The project is assembled by the [NPM](https://www.npmjs.com/) using the [Webpack](https://webpack.js.org/) bundler.
-
 To build, test and deploy the site you gonna need [`npm` installed](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) on your system.
-
 Then to configure the dependencies and prepare development environment, execute
 ```
 npm install
@@ -29,20 +27,21 @@ To automate the deployment process, the project has a simple command
 npm run deploy
 ```
 
-In order it to work you need [AWS Command Line Interface](https://aws.amazon.com/cli/) installed and configured on the system. Here's what you need to do:
+In order to work, the command needs [AWS Command Line Interface](https://aws.amazon.com/cli/) to be installed and configured on the system. Here's what you need to do:
 
-## 1. Install `awscli`  
-  For Windows - https://awscli.amazonaws.com/AWSCLIV2.msi  
-  For Debian based Linux execute the command:
-  ```
-  sudo apt install awscli
-  ```
-## 2. Configure `aws` profile
-We use `crashinvaders` profile in the `deploy` command.
+### 1. Install `awscli`  
+
+For Windows - https://awscli.amazonaws.com/AWSCLIV2.msi  
+For Debian based Linux execute the command:
+```
+sudo apt install awscli
+```
+
+### 2. Configure `aws` profile
 
 Here's [the doc](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html) describing the AWS configuration file and format. But the configuration can be done using the `aws` command line tool.
 
-To setup a new profile, execute the next command:
+We use `crashinvaders` profile in the `deploy` command. To setup a new profile, execute the command:
 ```
 aws configure --profile crashinvaders
 ```
