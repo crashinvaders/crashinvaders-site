@@ -241,7 +241,8 @@ a {
 
     &.clean {
       border-radius: 0%;
-      box-shadow: none
+      box-shadow: none;
+      // filter: drop-shadow( 0 $size * 0.05 0 #00000026);
     }
   }
 }
