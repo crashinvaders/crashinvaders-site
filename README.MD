@@ -7,7 +7,12 @@ Then to configure the dependencies and prepare development environment, execute
 npm install
 ```
 
-From now on, use one of the commands from under the `package.json` "scripts" section to do stuff.
+From now on, use one of the commands from under the `package.json` "scripts" section to do stuff. To see the full list of scripts run
+```
+npm run
+```
+
+## Important scripts
 
 `npm start` - starts a dev HTTP server and incrementally recompiles the project as you change the sources (read the console output for details). Anton
 
