@@ -1,6 +1,11 @@
 # Working with the sources
 
-The project is assembled by the [NPM](https://www.npmjs.com/) using the [Webpack](https://webpack.js.org/) bundler with [Pug](https://pugjs.org/api/getting-started.html) page templates.
+The project is 
+- Assembled by [NPM](https://www.npmjs.com/) 
+- Bundled by [Webpack](https://webpack.js.org/) 
+- Templated with [Pug](https://pugjs.org/)
+- Coded with [TypeScript](https://www.typescriptlang.org/)
+
 To build, test and deploy the site you gonna need [`npm` installed](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) on your system.
 Then to configure the dependencies and prepare development environment, execute
 ```
