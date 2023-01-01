@@ -20,7 +20,8 @@
     "typescript": "^3.9.7",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^3.11.0",
+    "open-cli": "^6.0.1"
   },
   "dependencies": {
     "@types/aos": "^3.0.3",
@@ -30,7 +31,7 @@
     "build:dev": "webpack",
     "build:release": "webpack --env.release",
     "build": "npm run build:dev",
-    "start": "webpack-dev-server",
+    "start": "open-cli http://127.0.0.1:3000 && webpack-dev-server",
     "watch": "webpack --watch",
     "deploy": "npm run build:release && aws s3 sync dist s3://crashinvaders.com/ --profile crashinvaders --metadata-directive REPLACE --acl public-read --cache-control max-age=604800,public",
     "pug:watch": "pug -w ./src/pug -o ./src/pug -P"

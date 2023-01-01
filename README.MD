@@ -20,7 +20,7 @@ npm run
 
 ## Important scripts
 
-`npm start` - starts a dev HTTP server and incrementally recompiles the project as you change the sources (read the console output for details). Anton
+`npm start` - starts a dev HTTP server and incrementally recompiles the project as you change the sources (read the console output for details). Simply go to http://localhost:3000/ once the dev server is running.
 
 `npm run build` or  
 `npm run build:dev` - assembles the dev website and outputs the files to `./dist`
@@ -59,8 +59,8 @@ aws configure --profile crashinvaders
 
 It will ask you to enter your AWS personal access key ID and the secret key (ask Anton for those). Here's the full set of data required and what you should put in there:
 ```
-AWS Access Key ID: *
-AWS Secret Access Key: *
+AWS Access Key ID: ***
+AWS Secret Access Key: ***
 Default region name [None]: eu-central-1
 Default output format [None]: text
 ```

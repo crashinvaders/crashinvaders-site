@@ -418,6 +418,12 @@ a {
   height: 48px;
   float: left;
 
+  &.github {
+    background-image: url(../images/btn-social-github-up.png);
+    &:active, &:hover {
+      background-image: url(../images/btn-social-github-down.png);
+    }
+  }
   &.twit {
     background-image: url(../images/btn-social-twit-up.png);
     &:active, &:hover {
