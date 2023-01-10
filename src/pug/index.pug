@@ -1,18 +1,16 @@
-// For local watch/compilation use command:
-// pug -w .\src\pug -o .\src\pug -P
+//- For local watch/compilation use command:
+//- pug -w .\src\pug -o .\src\pug -P
 
 doctype html
 html(lang="en")
     head
-        // Global site tag (gtag.js) - Google Analytics
-        script.
+        //- Google tag (gtag.js)
+        script(async, src='https://www.googletagmanager.com/gtag/js?id=G-LNPTF6VYXZ')
+        script: :uglify-js
             window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag("js", new Date());
-            gtag("config", "UA-110119116-1");
-        meta(name="google-site-verification" content="DlhZ40EQqdoDURJOcpZPqqfIKhL6ZZ3jtxHP1Wawono")
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-LNPTF6VYXZ');
 
         meta(name="description" content="Crashinvaders Official Site")
         meta(name="author" content="Anton Chekulaev")
@@ -83,9 +81,9 @@ html(lang="en")
                                     a.btn-app-link.android(
                                         target="_blank",
                                         href="https://play.google.com/store/apps/details?id=com.crashinvaders.dashysmash")
-                                    //a.btn-app-link.web(
-                                    //    target="_blank",
-                                    //    href="http://crashinvaders.com/getreact")
+                                    //- a.btn-app-link.web(
+                                    //-    target="_blank",
+                                    //-    href="http://crashinvaders.com/getreact")
                                 div.thumb-release-date-text --- 2023 <span class="faded">/ 2015</span> ---
 
                     div.feature-item
@@ -135,12 +133,12 @@ html(lang="en")
                                         href="https://play.google.com/store/apps/details?id=com.crashinvaders.seven")
                                 div.thumb-release-date-text --- 2012 ---
 
-                            //div(style="padding: 8px 0")
-                            //    a.article-link(
-                            //        target="_blank"
-                            //        rel="noopener noreferrer"
-                            //        href="https://gameskeys.net/underrated-board-games-to-play-on-ios")
-                            //        |Read recent article
+                            //-div(style="padding: 8px 0")
+                            //-    a.article-link(
+                            //-        target="_blank"
+                            //-        rel="noopener noreferrer"
+                            //-        href="https://gameskeys.net/underrated-board-games-to-play-on-ios")
+                            //-        |Read recent article
 
 
                 div.section-title-bg
@@ -300,7 +298,7 @@ html(lang="en")
                                 div.thumb-release-date-text --- 2020 ---
 
 
-                // Dev faces
+                //- Dev faces
                 div.face-holder
                     div
                         input.face.miha(
