@@ -7,7 +7,7 @@ The project is
 - Templated with [Pug](https://pugjs.org/)
 - Styled with [SASS](https://sass-lang.com/)
 
-To build, test and deploy the site you gonna need [`npm` installed](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) on your system.
+To build, test and deploy the site you gonna need [`npm` installed](https://docs.npmjs.com/downloading-and-inss-lang.com/)talling-node-js-and-npm) on your system.
 Then to configure the dependencies and prepare development environment, execute
 ```
 npm install
@@ -16,6 +16,13 @@ npm install
 From now on, use one of the commands from under the `package.json` "scripts" section to do stuff. To see the full list of scripts run
 ```
 npm run
+```
+
+### NPM Security Issues
+
+If `npm` fails the build and spits off the `ERR_OSSL_EVP_UNSUPPORTED` error, you might want to look to upgrade to the latest `nodejs/npm` or just skip the damn thing with:
+```bash
+export NODE_OPTIONS=--openssl-legacy-provider
 ```
 
 ## Important scripts
