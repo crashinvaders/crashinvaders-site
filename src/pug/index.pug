@@ -41,14 +41,13 @@ html(lang="en")
 
                 div.about-pane(data-aos="fade-right" data-aos-delay="250")
                     div
-                        p(style="text-align: center").
+                        p(style="text-align: left").
                             Hey there stranger!
                         p(style="text-align: left").
-                            We are two-man game dev team full of ideas and ambitions.
-                            Tinkering our own projects since 2012, we sometimes take freelance work and are
-                            always open for interesting opportunities.
+                            We are a game dev hobbyist duo.
+                            Since 2012 we tinker our projects and take part in various gamejams.
                         p(style="text-align: left").
-                            It's so great to see you on our tiny piece of web!
+                            It's so nice to see you on our tiny piece of web!
                             Feel free to <a href="mailto:contact@crashinvaders.com">reach us out</a>, we would love to talk! :)
                         p(style="margin-top: 8px; text-align: right")
                             | Yours Sincerely,
@@ -210,6 +209,30 @@ html(lang="en")
                     div.feature-item
                         div.thumb-image-container
                             div.cycler(data-thumb-cycle-images=
+                            "../images/thumb-laughemout0.png, " +
+                            "../images/thumb-laughemout1.png")
+                            img.thumb-icon(src="../images/icon-laughemout.png")
+                            div.thumb-image-dim(style="background-color: #95a4b6")
+                        div.feature-frame
+                            p.thumb-title.small Laugh'Em Out
+                            p.thumb-desc
+                                | The ultimate stand-up comedy simulator.
+                                br
+                                | Be fun or be canceled.
+                            div.thumb-links-pane
+                                p.thumb-available-text Play now at
+                                div(style="display: inline-block")
+                                    a.btn-app-link.web(
+                                        target="_blank",
+                                        href="http://crashinvaders.com/laughemout")
+                                div.thumb-release-date-text
+                                    | --- 2024 ---
+                                    br
+                                    | Global Game Jam
+
+                    div.feature-item
+                        div.thumb-image-container
+                            div.cycler(data-thumb-cycle-images=
                             "../images/thumb-trashville0.png, " +
                             "../images/thumb-trashville1.png, " +
                             "../images/thumb-trashville2.png, " +
@@ -225,7 +248,10 @@ html(lang="en")
                                     a.btn-app-link.web(
                                         target="_blank",
                                         href="http://crashinvaders.com/trashville")
-                                div.thumb-release-date-text --- 2015 ---
+                                div.thumb-release-date-text
+                                    | --- 2015 ---
+                                    br
+                                    | GameDev Party 4 (winner)
 
                     div.feature-item
                         div.thumb-image-container
@@ -245,7 +271,10 @@ html(lang="en")
                                     a.btn-app-link.web(
                                         target="_blank",
                                         href="http://crashinvaders.com/thelastpals")
-                                div.thumb-release-date-text --- 2015 ---
+                                div.thumb-release-date-text
+                                    | --- 2015 ---
+                                    br
+                                    | GameDev Party 3
 
 
                 div.section-title-bg
@@ -319,7 +348,7 @@ html(lang="en")
 
 
         div.footer-pane
-            p.credits-text 2012-2023 Crashinvaders
+            p.credits-text 2012-2024 Crashinvaders
             div(style="margin: auto")
                 div(style="display: inline-block; margin-bottom: -5px")
                     a.btn-social-link.github(href="https://github.com/crashinvaders" target="_blank" title="GitHub")
